@@ -12,8 +12,10 @@ profile:
 
 
 news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
+papers: true
+projects: false
 ---
 I am a master student at  [Robotics and Perception Group](https://rpg.ifi.uzh.ch/index.html) led by [Prof. Davide Scaramuzza](https://scholar.google.ch/citations?user=SC9wV2kAAAAJ&hl=en). I am interested in Computer Vision, especially by using Efficient Deep Learning. Currently, I am working on my master's thesis focusing on efficient Vision Transformers by exploiting token sparsity.
 Prior to that, I received my bachelors degree in _Mathematics and Applied Mathematics_ from [University of Science and Technology of China (USTC)](https://en.ustc.edu.cn/).
