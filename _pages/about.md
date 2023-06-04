@@ -17,8 +17,8 @@ social: false  # includes social icons at the bottom of the page
 papers: true
 projects: true
 ---
-I am a master student at  [Robotics and Perception Group](https://rpg.ifi.uzh.ch/index.html) led by [Prof. Davide Scaramuzza](https://scholar.google.ch/citations?user=SC9wV2kAAAAJ&hl=en). I am interested in Computer Vision, especially by using Efficient Deep Learning. Currently, I am working on my master's thesis focusing on efficient Vision Transformers by exploiting token sparsity.
-Prior to that, I received my bachelors degree in _Mathematics and Applied Mathematics_ from [University of Science and Technology of China (USTC)](https://en.ustc.edu.cn/).
+I am a Data Science master's student at  [University of Zurich (UZH)](https://www.uzh.ch/cmsssl/en.html). I was lucky to did my master thesis on sparse computation for vision transformers at [Robotics and Perception Group](https://rpg.ifi.uzh.ch/index.html) under the supervision of  [Prof. Davide Scaramuzza](https://scholar.google.ch/citations?user=SC9wV2kAAAAJ&hl=en). My interest lies in computer vision and deep learning, especially with efficient computation.
+Prior to my master's study, I obtained my bachelor's degree in _Mathematics and Applied Mathematics_ from [University of Science and Technology of China (USTC)](https://en.ustc.edu.cn/).
 
 [comment]: <> (Write your biography here. Tell the world about yourself. Link to your favorite [subreddit]&#40;http://reddit.com&#41;. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.)
 

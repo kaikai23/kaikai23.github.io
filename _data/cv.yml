@@ -82,7 +82,7 @@
         - Mission - Exploring using the sparsity in the input images to process only the silient tokens in ViTs for improved inference efficiency without apparent loss in model accuracy, extending existing methods for classification to object detection and instance segmentation.
     - title: Building an Offline Python SLAM using COLMAP, 03/2022 -06/2022
       items:
-        - Semester's Course Project at <a href="https://cvg.ethz.ch/">CVG</a> supervised by <a href="https://psarlin.com/">Paul-Edouard Sarlin</a>, <a href="https://scholar.google.com/citations?user=YYH0BjEAAAAJ&hl=en">Prof. Marc Pollefeys</a>
+        - Semester's Course Project at <a href="https://cvg.ethz.ch/">CVG</a> supervised by Paul-Edouard Sarlin, <a href="https://scholar.google.com/citations?user=YYH0BjEAAAAJ&hl=en">Prof. Marc Pollefeys</a>
         - Grade 6.0/6.0
         - Mission - extend the pycolmap Python bindings to have more control over the reconstruction process, and build a Python SLAM system that is simple, fast, and robust.
     - title: Efficient Spatio-Temporal Processing of Event Data, 09/2021 - 02/2022
