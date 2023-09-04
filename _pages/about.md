@@ -17,8 +17,11 @@ social: false  # includes social icons at the bottom of the page
 papers: true
 projects: true
 ---
-I am a master student at  [Robotics and Perception Group](https://rpg.ifi.uzh.ch/index.html) led by [Prof. Davide Scaramuzza](https://scholar.google.ch/citations?user=SC9wV2kAAAAJ&hl=en). I am interested in Computer Vision and Deep Learning with a focus on efficient inference and sparse computation. I did my master's thesis on accelerating Vision Transformer inference by dynamically pruning redundant tokens.
-Prior to that, I received my bachelors degree in _Mathematics and Applied Mathematics_ from [University of Science and Technology of China (USTC)](https://en.ustc.edu.cn/).
+Hello World, I am a Research Assistant in [ETH AIT Lab](https://ait.ethz.ch/) led by [Prof. Otmar Hilliges](https://ait.ethz.ch/people/hilliges) with a current research focus on 3D human-object interaction reconstruction from a single in the wild image.
+
+Before that, I did my master thesis at  [Robotics and Perception Group](https://rpg.ifi.uzh.ch/index.html) @ [University of Zurich](https://www.uzh.ch/cmsssl/en.html) led by [Prof. Davide Scaramuzza](https://scholar.google.ch/citations?user=SC9wV2kAAAAJ&hl=en) and worked on Computer Vision and Deep Learning with a focus on efficient inference and sparse computation, by means of pruning redundant tokens for Vision Transformers.
+
+Even before, I obtained my BSc degree in Mathematics @ [University of Science and Technology of China](https://en.ustc.edu.cn/).
 
 [comment]: <> (I am a  master's student at  [University of Zurich &#40;UZH&#41;]&#40;https://www.uzh.ch/cmsssl/en.html&#41;. I was lucky to did my master thesis on sparse computation for vision transformers at [Robotics and Perception Group]&#40;https://rpg.ifi.uzh.ch/index.html&#41; under the supervision of  [Prof. Davide Scaramuzza]&#40;https://scholar.google.ch/citations?user=SC9wV2kAAAAJ&hl=en&#41;. My interest lies in computer vision and deep learning, especially with efficient computation.)
 
