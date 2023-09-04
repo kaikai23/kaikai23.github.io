@@ -90,7 +90,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/kaikai23/svit" target="_blank"
+                    <a href="https://github.com/uzh-rpg/svit/" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -122,13 +122,8 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
+      <img src="static/images/svit.png" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
       </h2>
     </div>
   </div>
@@ -143,7 +138,14 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Vision Transformers (ViTs) have shown impressive performance in computer vision, but their high computational cost, quadratic in the number of tokens, limits their adoption in computation-constrained applications. However, this large number of tokens may not be necessary, as not all tokens are equally important.
+            In this paper, we investigate token pruning to accelerate inference for object detection and instance segmentation, extending prior works from image classification. Through extensive experiments, we offer four insights for dense tasks:
+            (i) tokens should not be completely pruned and discarded, but rather preserved in the feature maps for later use.
+            (ii) reactivating previously pruned tokens can further enhance model performance.
+            (iii) a dynamic pruning rate based on images is better than a fixed pruning rate.
+            (iv) a lightweight, 2-layer MLP can effectively prune tokens, achieving accuracy comparable with complex gating networks with a simpler design.
+            We assess the effects of these design decisions on the COCO dataset and introduce an approach that incorporates these findings, showing a reduction in performance decline from <b>~1.5 mAP</b> to <b>~0.3 mAP</b> in both boxes and masks, compared to existing token pruning methods.
+            In relation to the dense counterpart that utilizes all tokens, our method realizes an increase in inference speed, achieving up to <b>34%</b> faster performance for the entire network and <b>46%</b> for the backbone.
           </p>
         </div>
       </div>
@@ -153,127 +155,132 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+<!--&lt;!&ndash; Image carousel &ndash;&gt;-->
+<!--<section class="hero is-small">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <div id="results-carousel" class="carousel results-carousel">-->
+<!--       <div class="item">-->
+<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>-->
+<!--        <h2 class="subtitle has-text-centered">-->
+<!--          First image description.-->
+<!--        </h2>-->
+<!--      </div>-->
+<!--      <div class="item">-->
+<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>-->
+<!--        <h2 class="subtitle has-text-centered">-->
+<!--          Second image description.-->
+<!--        </h2>-->
+<!--      </div>-->
+<!--      <div class="item">-->
+<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>-->
+<!--        <h2 class="subtitle has-text-centered">-->
+<!--         Third image description.-->
+<!--       </h2>-->
+<!--     </div>-->
+<!--     <div class="item">-->
+<!--      &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>-->
+<!--      <h2 class="subtitle has-text-centered">-->
+<!--        Fourth image description.-->
+<!--      </h2>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
+<!--&lt;!&ndash; End image carousel &ndash;&gt;-->
 
 
 
 
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
+<!--&lt;!&ndash; Youtube video &ndash;&gt;-->
+<!--<section class="hero is-small is-light">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      &lt;!&ndash; Paper video. &ndash;&gt;-->
+<!--      <h2 class="title is-3">Video Presentation</h2>-->
+<!--      <div class="columns is-centered has-text-centered">-->
+<!--        <div class="column is-four-fifths">-->
+<!--          -->
+<!--          <div class="publication-video">-->
+<!--            &lt;!&ndash; Youtube embed code here &ndash;&gt;-->
+<!--            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+<!--&lt;!&ndash; End youtube video &ndash;&gt;-->
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
+<!--&lt;!&ndash; Video carousel &ndash;&gt;-->
+<!--<section class="hero is-small">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <h2 class="title is-3">Another Carousel</h2>-->
+<!--      <div id="results-carousel" class="carousel results-carousel">-->
+<!--        <div class="item item-video1">-->
+<!--          <video poster="" id="video1" autoplay controls muted loop height="100%">-->
+<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
+<!--            <source src="static/videos/carousel1.mp4"-->
+<!--            type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-video2">-->
+<!--          <video poster="" id="video2" autoplay controls muted loop height="100%">-->
+<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
+<!--            <source src="static/videos/carousel2.mp4"-->
+<!--            type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-video3">-->
+<!--          <video poster="" id="video3" autoplay controls muted loop height="100%">\-->
+<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
+<!--            <source src="static/videos/carousel3.mp4"-->
+<!--            type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+<!--&lt;!&ndash; End video carousel &ndash;&gt;-->
 
 
 
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
 
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
+
+
+<!--&lt;!&ndash; Paper poster &ndash;&gt;-->
+<!--<section class="hero is-small is-light">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <h2 class="title">Poster</h2>-->
+
+<!--      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">-->
+<!--          </iframe>-->
+<!--        -->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
+<!--&lt;!&ndash;End paper poster &ndash;&gt;-->
 
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@article{liu2023revisiting,
+  title={Revisiting Token <Pr></Pr>uning for Object Detection and Instance Segmentation},
+  author={Liu, Yifei and Gehrig, Mathias and Messikommer, Nico and Cannici, Marco and Scaramuzza, Davide},
+  journal={arXiv preprint arXiv:2306.07050},
+  year={2023}
+}</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
