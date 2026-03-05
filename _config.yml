@@ -6,7 +6,7 @@ title: Yifei Liu # the website title (if blank, full name will be used instead)
 first_name: Yifei
 middle_name:
 last_name: Liu
-email: yifei.liu@uzh.ch
+email: liuyifei@pjlab.org.cn
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
@@ -73,7 +73,8 @@ twitter_username: kaikai23L
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: yifei-liu-4367a21a4 # your LinkedIn user name
 telegram_username: # your Telegram user name
-scholar_userid: # your Google Scholar ID
+scholar_userid: Pi8Bw54AAAAJ # your Google Scholar ID
+scholar_url: https://scholar.google.com/citations?user=Pi8Bw54AAAAJ&hl=zh-CN
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 orcid_id: # your ORCID ID
@@ -170,8 +171,8 @@ collections:
     output: true
     permalink: /projects/:path/
 
-news_scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-news_limit: 10 # leave blank to include all the news in the `_news` folder
+news_scrollable: false # adds a vertical scroll bar if there are more than 3 news items
+news_limit: # leave blank to include all the news in the `_news` folder
 
 # -----------------------------------------------------------------------------
 # Jekyll settings

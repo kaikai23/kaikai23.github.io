@@ -1,0 +1,92 @@
+<section class="research-radar">
+  <h2>Research Skill Radar</h2>
+  <div class="research-radar__chart-wrap">
+    <canvas id="research-radar-chart" aria-label="Research skill radar chart" role="img"></canvas>
+  </div>
+</section>
+
+<style>
+  .research-radar {
+    margin: 1.5rem 0 1rem;
+  }
+
+  .research-radar__chart-wrap {
+    max-width: 560px;
+    width: 100%;
+  }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<script>
+  (function () {
+    var canvas = document.getElementById("research-radar-chart");
+    if (!canvas || typeof Chart === "undefined") return;
+
+    var data = {
+      labels: [
+        "Novel View Synthesis",
+        "Sparse Attention",
+        "VLM",
+        "RL",
+        "SLAM",
+        "Avatar",
+        "Low Level"
+      ],
+      datasets: [
+        {
+          label: "Self Rating",
+          data: [5, 4.5, 3, 3, 3, 2, 3.5],
+          fill: true,
+          backgroundColor: "rgba(30, 136, 229, 0.20)",
+          borderColor: "rgba(30, 136, 229, 0.95)",
+          pointBackgroundColor: "rgba(30, 136, 229, 1)",
+          pointBorderColor: "#ffffff",
+          pointRadius: 3
+        }
+      ]
+    };
+
+    new Chart(canvas, {
+      type: "radar",
+      data: data,
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        aspectRatio: 1.45,
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+            callbacks: {
+              label: function (context) {
+                return context.label + ": " + context.raw;
+              }
+            }
+          }
+        },
+        scales: {
+          r: {
+            min: 0,
+            max: 5,
+            ticks: {
+              display: false,
+              stepSize: 1
+            },
+            grid: {
+              color: "rgba(130, 130, 130, 0.25)"
+            },
+            angleLines: {
+              color: "rgba(130, 130, 130, 0.25)"
+            },
+            pointLabels: {
+              font: {
+                size: 12
+              }
+            }
+          }
+        }
+      }
+    });
+  })();
+</script>

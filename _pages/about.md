@@ -17,11 +17,21 @@ social: false  # includes social icons at the bottom of the page
 papers: true
 projects: true
 ---
-Hello World, I am a Research Assistant in [ETH AIT Lab](https://ait.ethz.ch/) led by [Prof. Otmar Hilliges](https://ait.ethz.ch/people/hilliges) with a current research focus on 3D human-object interaction reconstruction from a single in the wild image.
+<style>
+  .bio-intro p {
+    text-wrap: pretty;
+  }
+</style>
 
-Before that, I did my master thesis at  [Robotics and Perception Group](https://rpg.ifi.uzh.ch/index.html) @ [University of Zurich](https://www.uzh.ch/cmsssl/en.html) led by [Prof. Davide Scaramuzza](https://scholar.google.ch/citations?user=SC9wV2kAAAAJ&hl=en) and worked on Computer Vision and Deep Learning with a focus on efficient inference and sparse computation, by means of pruning redundant tokens for Vision Transformers.
+<div class="bio-intro" markdown="1">
+Hey! I am a second-year Ph.D. candidate at [BUAA](https://www.buaa.edu.cn/) and [Shanghai AI Lab](https://www.shlab.org.cn/) cosupervised by Prof. [Yu Qiao](https://mmlab.siat.ac.cn/yuqiao/), [Xiao Sun](https://jimmysuen.github.io/) and [Zhihang Zhong](https://zzh-tech.github.io/). Previously, I was a research assistant at [ETH](https://ethz.ch/en.html), a graduate researcher at Robotics and Perception Group led by Prof. [Davide Scaramuzza](https://rpg.ifi.uzh.ch/people_scaramuzza.html), and an undergraduate student at [USTC](https://en.ustc.edu.cn/).
 
-Even before, I obtained my BSc degree in Mathematics @ [University of Science and Technology of China](https://en.ustc.edu.cn/).
+I am broadly interested in computer vision, (visual) language models and sparse algorithms.
+
+Feel free to contact me if you are interested in my research and want to collaborate! My current exploration is on agentic RL for spatial tasks.
+</div>
+
+{% include research_radar.html %}
 
 [comment]: <> (I am a  master's student at  [University of Zurich &#40;UZH&#41;]&#40;https://www.uzh.ch/cmsssl/en.html&#41;. I was lucky to did my master thesis on sparse computation for vision transformers at [Robotics and Perception Group]&#40;https://rpg.ifi.uzh.ch/index.html&#41; under the supervision of  [Prof. Davide Scaramuzza]&#40;https://scholar.google.ch/citations?user=SC9wV2kAAAAJ&hl=en&#41;. My interest lies in computer vision and deep learning, especially with efficient computation.)
 
