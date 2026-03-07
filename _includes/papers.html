@@ -68,11 +68,15 @@
       right: 3%;
       text-align: right;
     }
+
+    .publication-row + .publication-row td {
+      padding-top: 12px;
+    }
   </style>
 
   <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
-      <tr>
+      <tr class="publication-row">
         <td width="40%" valign="center" align="center">
           <img src="https://github.com/Visionary-Laboratory/Proxy-GS/raw/main/assets/teaser.jpg" alt="Proxy-GS teaser" width="95%" style="margin-top:10px;padding-top:20px;padding-bottom:20px;border-radius:15px;border:1px solid black">
         </td>
@@ -100,14 +104,13 @@
             <a href="https://github.com/Visionary-Laboratory/Proxy-GS"> [Code] </a>
             <a href="https://visionary-laboratory.github.io/Proxy-GS"> [Project] </a>
           </div>
-          <br/>
           <div>
             Unified occlusion priors for structured 3D Gaussian splatting with faster rendering in large occluded scenes.
           </div>
         </td>
       </tr>
 
-      <tr>
+      <tr class="publication-row">
         <td width="40%" valign="center" align="center">
           <img src="assets/img/visionary-teaser-user.png" alt="Visionary teaser" width="95%" style="margin-top:10px;padding-top:20px;padding-bottom:20px;border-radius:15px;border:1px solid black">
         </td>
@@ -134,14 +137,13 @@
             <a href="https://github.com/Visionary-Laboratory/visionary"> [Code] </a>
             <a href="https://visionary-laboratory.github.io/visionary/"> [Project] </a>
           </div>
-          <br/>
           <div>
             A web-native WebGPU platform for real-time Gaussian Splatting, mesh rendering, and per-frame ONNX inference.
           </div>
         </td>
       </tr>
 
-      <tr>
+      <tr class="publication-row">
         <td width="40%" valign="center" align="center">
           <div class="maskgaussian-compare" role="img" aria-label="3DGS and MaskGaussian visual comparison">
             <img src="https://maskgaussian.github.io/static/images/kitchen_3dgs_crop.png" alt="3DGS baseline rendering">
@@ -178,14 +180,13 @@ FPS: 435.0</div>
             <a href="https://github.com/kaikai23/MaskGaussian"> [Code] </a>
             <a href="https://maskgaussian.github.io/"> [Project] </a>
           </div>
-          <br/>
           <div>
             Adaptive probabilistic masking for pruning 3D Gaussians while preserving rendering quality.
           </div>
         </td>
       </tr>
 
-      <tr>
+      <tr class="publication-row">
         <td width="40%" valign="center" align="center">
           <img src="assets/img/svit.png" alt="SViT teaser" width="95%" style="margin-top:10px;padding-top:20px;padding-bottom:20px;border-radius:15px;border:1px solid black">
         </td>
@@ -208,7 +209,6 @@ FPS: 435.0</div>
             <a href="https://github.com/kaikai23/svit"> [Code] </a>
             <a href="SViT-project-page/index.html"> [Project] </a>
           </div>
-          <br/>
           <div>
             Pruning tokens for Vision Transformers to accelerate inference speed on dense tasks.
           </div>
