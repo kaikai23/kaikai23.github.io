@@ -30,9 +30,6 @@ I am broadly interested in computer vision, (visual) language models and sparse 
 
 Feel free to contact me if you are interested in my research and want to collaborate! My current exploration is on agentic RL for spatial tasks.
 </div>
-
-{% include research_radar.html %}
-
 [comment]: <> (I am a  master's student at  [University of Zurich &#40;UZH&#41;]&#40;https://www.uzh.ch/cmsssl/en.html&#41;. I was lucky to did my master thesis on sparse computation for vision transformers at [Robotics and Perception Group]&#40;https://rpg.ifi.uzh.ch/index.html&#41; under the supervision of  [Prof. Davide Scaramuzza]&#40;https://scholar.google.ch/citations?user=SC9wV2kAAAAJ&hl=en&#41;. My interest lies in computer vision and deep learning, especially with efficient computation.)
 
 [comment]: <> (Prior to my master's study, I obtained my bachelor's degree in _Mathematics and Applied Mathematics_ from [University of Science and Technology of China &#40;USTC&#41;]&#40;https://en.ustc.edu.cn/&#41;.)

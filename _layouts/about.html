@@ -12,6 +12,30 @@ layout: default
         </header>
 
         <article>
+          <style>
+            .home-panels {
+              display: grid;
+              grid-template-columns: 1fr;
+              gap: 1.5rem;
+              align-items: start;
+            }
+
+            @media (min-width: 992px) {
+              .home-panels {
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+              }
+            }
+
+            .home-panel .research-radar {
+              margin: 0;
+            }
+
+            .home-panel .research-radar__chart-wrap {
+              max-width: none;
+            }
+          </style>
+
           {% if page.profile -%}
           <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
             {%- if page.profile.image %}
@@ -40,10 +64,16 @@ layout: default
             {{ content }}
           </div>
 
-          <!-- News -->
           {% if page.news -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
-            {%- include news.html %}
+          <div class="home-panels">
+            <div class="home-panel home-panel-news">
+              <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
+              {%- include news.html %}
+            </div>
+            <div class="home-panel home-panel-radar">
+              {%- include research_radar.html %}
+            </div>
+          </div>
           {%- endif %}
 
           <!-- Selected papers -->

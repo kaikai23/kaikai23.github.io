@@ -1,40 +1,219 @@
+<div class="publications">
+  <h2>Publications</h2>
+  <style>
+    .maskgaussian-compare {
+      position: relative;
+      width: 95%;
+      margin-top: 10px;
+      border-radius: 15px;
+      border: 1px solid #000;
+      overflow: hidden;
+      aspect-ratio: 1024 / 803;
+      background: #111;
+    }
 
-          <div class="publications">
-            <h2>Publications</h2>
+    .maskgaussian-compare img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
 
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    .maskgaussian-compare .maskgaussian-overlay {
+      clip-path: polygon(0 0, 100% 0, 100% 100%);
+    }
 
-              <tr>
-                <td width="40%" valign="center" align="center">
-                <img src="assets/img/svit.png" alt="sym" width="95%" style="margin-top:10px;padding-top:20px;padding-bottom:20px;border-radius:15px;border:1px solid black">
-                </td>
+    .maskgaussian-compare .maskgaussian-divider {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 2px;
+      background: rgba(255, 255, 255, 0.85);
+      transform: translateX(-50%);
+    }
 
-                <td width="60%" valign="center">
-                  <a href="SViT-project-page/index.html" id="perception-aware">
-                  <papertitle width="110%"><b>Revisiting Token Pruning for Object Detection and Instance Segmentation</b></papertitle></a><br>
+    .maskgaussian-compare .maskgaussian-handle {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 68px;
+      height: 68px;
+      border-radius: 999px;
+      border: 4px solid #fff;
+      background: rgba(0, 0, 0, 0.25);
+      transform: translate(-50%, -50%);
+    }
 
-                    <b>Yifei Liu</b>,
-                    Mathias Gehrig,
-                    Nico Messikommer,
-                    Marco Cannici,
-                    Davide Scaramuzza
-                  <br/>
-                  <div class="paper" id="svit">
-                    <a href="https://arxiv.org/pdf/2306.07050.pdf"> [PDF] </a>
-                    <a href="https://github.com/kaikai23/svit"> [Code] </a>
-                    <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:brN93ViM3DkJ:scholar.google.com/&output=citation&scisdr=ClGvzbvxEIKRyHhqlyY:AFWwaeYAAAAAZOtsjyZxRo5PRI3imIw4dGu0WTA&scisig=AFWwaeYAAAAAZOtsj3wp4v7VBc06euOEwpbEsjQ&scisf=4&ct=citation&cd=-1&hl=en"> [Cite] </a>
-                    <a href="SViT-project-page/index.html"> [Project] </a>
-                  </div>
-                  <br/>
-                  <div>
-                      Pruning tokens for Vision Transformers to accelerate inference speed on dense tasks.
-                  </div>
+    .maskgaussian-compare .maskgaussian-tag {
+      position: absolute;
+      bottom: 4%;
+      color: #fff;
+      background: rgba(8, 10, 16, 0.9);
+      padding: 10px 14px;
+      border-radius: 12px;
+      font-size: 13px;
+      line-height: 1.45;
+      text-align: left;
+      white-space: pre-line;
+    }
 
+    .maskgaussian-compare .maskgaussian-tag-left {
+      left: 3%;
+    }
 
+    .maskgaussian-compare .maskgaussian-tag-right {
+      right: 3%;
+      text-align: right;
+    }
+  </style>
 
-              </td>
-              </tr>
+  <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+      <tr>
+        <td width="40%" valign="center" align="center">
+          <img src="https://github.com/Visionary-Laboratory/Proxy-GS/raw/main/assets/teaser.jpg" alt="Proxy-GS teaser" width="95%" style="margin-top:10px;padding-top:20px;padding-bottom:20px;border-radius:15px;border:1px solid black">
+        </td>
 
-            </tbody></table>
+        <td width="60%" valign="center">
+          <a href="https://visionary-laboratory.github.io/Proxy-GS" id="proxy-gs">
+            <papertitle width="110%"><b>Proxy-GS: Unified Occlusion Priors for Training and Inference in Structured 3D Gaussian Splatting</b></papertitle>
+          </a><br>
 
+          Yuanyuan Gao,
+          Yuning Gong,
+          <b>Yifei Liu</b>,
+          Li Jingfeng,
+          Dingwen Zhang,
+          Yanci Zhang,
+          Dan Xu,
+          Xiao Sun,
+          Zhihang Zhong
+          <br/>
+          <em>CVPR 2026</em>
+          <br/>
+          <div class="paper" id="proxy-gs-links">
+            <a href="https://arxiv.org/pdf/2509.24421.pdf"> [PDF] </a>
+            <a href="https://arxiv.org/abs/2509.24421"> [arXiv] </a>
+            <a href="https://github.com/Visionary-Laboratory/Proxy-GS"> [Code] </a>
+            <a href="https://visionary-laboratory.github.io/Proxy-GS"> [Project] </a>
           </div>
+          <br/>
+          <div>
+            Unified occlusion priors for structured 3D Gaussian splatting with faster rendering in large occluded scenes.
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td width="40%" valign="center" align="center">
+          <img src="assets/img/visionary-teaser-user.png" alt="Visionary teaser" width="95%" style="margin-top:10px;padding-top:20px;padding-bottom:20px;border-radius:15px;border:1px solid black">
+        </td>
+
+        <td width="60%" valign="center">
+          <a href="https://visionary-laboratory.github.io/visionary/" id="visionary">
+            <papertitle width="110%"><b>Visionary: The World Model Carrier Built on WebGPU-Powered Gaussian Splatting Platform</b></papertitle>
+          </a><br>
+
+          Yuning Gong,
+          <b>Yifei Liu</b>,
+          Yifan Zhan,
+          Muyao Niu,
+          Xueying Li,
+          ...,
+          Xiao Sun,
+          Zhihang Zhong
+          <br/>
+          <em>arXiv 2025</em>
+          <br/>
+          <div class="paper" id="visionary-links">
+            <a href="https://arxiv.org/pdf/2512.08478.pdf"> [PDF] </a>
+            <a href="https://arxiv.org/abs/2512.08478"> [arXiv] </a>
+            <a href="https://github.com/Visionary-Laboratory/visionary"> [Code] </a>
+            <a href="https://visionary-laboratory.github.io/visionary/"> [Project] </a>
+          </div>
+          <br/>
+          <div>
+            A web-native WebGPU platform for real-time Gaussian Splatting, mesh rendering, and per-frame ONNX inference.
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td width="40%" valign="center" align="center">
+          <div class="maskgaussian-compare" role="img" aria-label="3DGS and MaskGaussian visual comparison">
+            <img src="https://maskgaussian.github.io/static/images/kitchen_3dgs_crop.png" alt="3DGS baseline rendering">
+            <img class="maskgaussian-overlay" src="https://maskgaussian.github.io/static/images/kitchen_ours_crop.png" alt="MaskGaussian rendering">
+            <div class="maskgaussian-divider"></div>
+            <div class="maskgaussian-handle"></div>
+            <div class="maskgaussian-tag maskgaussian-tag-left">3DGS [Kerbl 2023]
+PSNR: 31.54
+# GS (M): 1.75
+FPS: 195.1</div>
+            <div class="maskgaussian-tag maskgaussian-tag-right">Ours
+PSNR: 31.54
+# GS (M): 0.51
+FPS: 435.0</div>
+          </div>
+        </td>
+
+        <td width="60%" valign="center">
+          <a href="https://maskgaussian.github.io/" id="maskgaussian">
+            <papertitle width="110%"><b>MaskGaussian: Adaptive 3D Gaussian Representation from Probabilistic Masks</b></papertitle>
+          </a><br>
+
+          <b>Yifei Liu</b>,
+          Zhihang Zhong,
+          Yifan Zhan,
+          Sheng Xu,
+          Xiao Sun
+          <br/>
+          <em>CVPR 2025</em>
+          <br/>
+          <div class="paper" id="maskgaussian-links">
+            <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Liu_MaskGaussian_Adaptive_3D_Gaussian_Representation_from_Probabilistic_Masks_CVPR_2025_paper.pdf"> [PDF] </a>
+            <a href="https://arxiv.org/abs/2412.20522"> [arXiv] </a>
+            <a href="https://github.com/kaikai23/MaskGaussian"> [Code] </a>
+            <a href="https://maskgaussian.github.io/"> [Project] </a>
+          </div>
+          <br/>
+          <div>
+            Adaptive probabilistic masking for pruning 3D Gaussians while preserving rendering quality.
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td width="40%" valign="center" align="center">
+          <img src="assets/img/svit.png" alt="SViT teaser" width="95%" style="margin-top:10px;padding-top:20px;padding-bottom:20px;border-radius:15px;border:1px solid black">
+        </td>
+
+        <td width="60%" valign="center">
+          <a href="SViT-project-page/index.html" id="svit">
+            <papertitle width="110%"><b>Revisiting Token Pruning for Object Detection and Instance Segmentation</b></papertitle>
+          </a><br>
+
+          <b>Yifei Liu</b>,
+          Mathias Gehrig,
+          Nico Messikommer,
+          Marco Cannici,
+          Davide Scaramuzza
+          <br/>
+          <em>WACV 2024</em>
+          <br/>
+          <div class="paper" id="svit-links">
+            <a href="https://arxiv.org/pdf/2306.07050.pdf"> [PDF] </a>
+            <a href="https://github.com/kaikai23/svit"> [Code] </a>
+            <a href="SViT-project-page/index.html"> [Project] </a>
+          </div>
+          <br/>
+          <div>
+            Pruning tokens for Vision Transformers to accelerate inference speed on dense tasks.
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
