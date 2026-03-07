@@ -23,7 +23,7 @@
           {%- elsif site.enable_navbar_social -%}
           <!-- Social Icons -->
           <div class="navbar-brand social">
-            {% include social.html %}
+            {% include social.html hide_linkedin=true hide_twitter=true %}
           </div>
           {% endif %}
           <!-- Navbar Toggle -->
@@ -66,6 +66,13 @@
               {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
               {%- for p in sorted_pages -%}
               {%- if p.nav and p.autogen == nil -%}
+              {%- assign hide_cv_on_home = false -%}
+              {%- if page.permalink == '/' and p.permalink == '/cv/' -%}
+              {%- assign hide_cv_on_home = true -%}
+              {%- elsif page.permalink == '/' and p.title == 'cv & curriculum' -%}
+              {%- assign hide_cv_on_home = true -%}
+              {%- endif -%}
+              {%- if hide_cv_on_home == false -%}
               {%- if p.dropdown %}
               <li class="nav-item dropdown {% if page.title == p.title %}active{% endif %}">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ p.title }}
@@ -91,6 +98,7 @@
                   {%- endif -%}
                 </a>
               </li>
+              {%- endif -%}
               {%- endif -%}
               {%- endif -%}
               {% endfor -%}
