@@ -4,10 +4,6 @@ title: Home
 permalink: /
 ---
 
-I am a Ph.D. candidate at [Beihang University](https://www.buaa.edu.cn/) and [Shanghai AI Laboratory](https://www.shlab.org.cn/), co-supervised by Prof. [Yu Qiao](https://mmlab.siat.ac.cn/yuqiao/), [Xiao Sun](https://jimmysuen.github.io/), and [Zhihang Zhong](https://zzh-tech.github.io/).
+I am a PhD candidate at [BUAA](https://www.buaa.edu.cn/) and [Shanghai AI Laboratory](https://www.shlab.org.cn/), advised by Prof. [Yu Qiao](https://mmlab.siat.ac.cn/yuqiao/) and Prof. [Xiao Sun](https://jimmysuen.github.io/). My research focuses on spatial intelligence, from efficient 3D Gaussian splatting to agentic 3D understanding. I currently train autoregressive 3D generative models.
 
-My research focuses on **sparse computer vision and spatial understanding with vision-language models**. I work on efficient 3D representations and learning to understand the 3D world. My current exploration is on agentic RL for spatial tasks.
-
-Previously, I did my Master's thesis in [ETH Zurich](https://ethz.ch/en.html) and [University of Zurich](https://www.uzh.ch/en.html), advised by Prof. [Davide Scaramuzza](https://rpg.ifi.uzh.ch/people_scaramuzza.html), and received Bachelor in [University of Science and Technology of China](https://en.ustc.edu.cn/).
-
-Feel free to get in touch about research and collaboration.
+Previously, I was a research assistant at [ETH Zurich](https://ethz.ch/en.html), where I developed efficient token representations for Vision Transformers. I earned my bachelor's degree from the [University of Science and Technology of China](https://en.ustc.edu.cn/).
