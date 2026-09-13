@@ -1,0 +1,17 @@
+---
+layout: academic
+title: Archive
+permalink: /archive.html
+---
+<header class="archive-header"><h1>Archive</h1></header>
+<section id="news" class="archive-section">
+  <h2>News</h2>
+  <ul class="news-list">
+    {% assign news = site.news | sort: 'date' | reverse %}
+    {% for item in news %}
+    <li><time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: '%Y' }}</time><div>{{ item.content | remove: '<p>' | remove: '</p>' }}</div></li>
+    {% endfor %}
+  </ul>
+</section>
+<section id="projects" class="archive-section">{% include myprojects.html %}</section>
+<section id="highlighted-courses" class="archive-section">{% include highlighted_courses.html %}</section>

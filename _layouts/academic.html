@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% unless page.title == 'Home' %}{{ page.title | escape }} | {% endunless %}Yifei Liu</title>
+  <meta name="description" content="Yifei Liu. Research in sparse computer vision, efficient 3D representations, and spatial understanding with vision-language models.">
+  <meta name="author" content="Yifei Liu">
+  <meta property="og:title" content="Yifei Liu">
+  <meta property="og:description" content="Sparse computer vision and spatial understanding with vision-language models.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ '/assets/img/prof_pic.png' | absolute_url }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}">
+</head>
+<body class="academic-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav aria-label="Main navigation">
+      <a href="{{ '/' | relative_url }}"{% if page.title == 'Home' %} aria-current="page"{% endif %}>Home</a>
+      <a href="{{ '/assets/pdf/yifei_liu_cv.pdf' | relative_url }}">CV</a>
+      <a href="{{ '/archive.html' | relative_url }}"{% if page.title == 'Archive' %} aria-current="page"{% endif %}>Archive</a>
+    </nav>
+  </header>
+  <main id="main" class="page-width">{{ content }}</main>
+  <footer class="site-footer page-width">
+    <div class="footer-links">
+      <a href="mailto:{{ site.email }}">Email</a>
+      <a href="{{ site.scholar_url }}">Scholar</a>
+      <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+    </div>
+    <p>Yifei Liu &middot; <a href="https://keunhong.com/">Design adapted from Keunhong Park</a></p>
+  </footer>
+</body>
+</html>

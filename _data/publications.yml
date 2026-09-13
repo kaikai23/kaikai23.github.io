@@ -1,0 +1,64 @@
+- id: holi-spatial
+  title: "Holi-Spatial: Evolving Video Streams into Holistic 3D Spatial Intelligence"
+  authors: "Yuanyuan Gao*, Hao Li*, <strong>Yifei Liu*</strong>, Xinhao Ji*, Yuning Gong*, Yuanjun Liao, Fangfu Liu, Manyuan Zhang, Yuchen Yang, Dan Xu, ..., Xiao Sun, Dingwen Zhang, Zhihang Zhong"
+  venue: "ICML, 2026"
+  award: "Oral"
+  image: /assets/img/holi-spatial.webp
+  width: 900
+  height: 506
+  project: https://visionary-laboratory.github.io/holi-spatial/
+  pdf: https://arxiv.org/pdf/2603.07660.pdf
+  arxiv: https://arxiv.org/abs/2603.07660
+  code: https://github.com/Visionary-Laboratory/Holi-Spatial
+  summary: "We build an automatic pipeline that turns raw videos into accurate and semantically aligned 3DGS and constructs instance- and camera-level spatial QA data; finetuning on it can improve open-source VLMs across multiple public spatial benchmarks."
+
+- id: proxy-gs
+  title: "Proxy-GS: Unified Occlusion Priors for Training and Inference in Structured 3D Gaussian Splatting"
+  authors: "Yuanyuan Gao, Yuning Gong, <strong>Yifei Liu</strong>, Jingfeng Li, Dingwen Zhang, Yanci Zhang, Dan Xu, Xiao Sun, Zhihang Zhong"
+  venue: "CVPR, 2026"
+  award: "Oral, Best Paper Award Candidate"
+  image: /assets/img/proxy-gs.webp
+  width: 1200
+  height: 529
+  project: https://visionary-laboratory.github.io/Proxy-GS
+  pdf: https://arxiv.org/pdf/2509.24421.pdf
+  arxiv: https://arxiv.org/abs/2509.24421
+  code: https://github.com/Visionary-Laboratory/Proxy-GS
+  summary: "We render a depth map from a proxy mesh to cull occluded Gaussians, eliminating long-overlooked occlusion redundancy in 3DGS. This hybrid rendering strategy leads to large speedups for large-scale rendering under heavy occlusions."
+
+- id: visionary
+  title: "Visionary: The World Model Carrier Built on WebGPU-Powered Gaussian Splatting Platform"
+  authors: "Yuning Gong, <strong>Yifei Liu</strong>, Yifan Zhan, Muyao Niu, Xueying Li, ..., Xiao Sun, Zhihang Zhong"
+  venue: "arXiv, 2025"
+  image: /assets/img/visionary.webp
+  width: 900
+  height: 425
+  project: https://visionary-laboratory.github.io/visionary/
+  pdf: https://arxiv.org/pdf/2512.08478.pdf
+  arxiv: https://arxiv.org/abs/2512.08478
+  code: https://github.com/Visionary-Laboratory/visionary
+  summary: "A web-native WebGPU platform for real-time Gaussian splatting, mesh rendering, and per-frame ONNX inference."
+
+- id: maskgaussian
+  title: "MaskGaussian: Adaptive 3D Gaussian Representation from Probabilistic Masks"
+  authors: "<strong>Yifei Liu</strong>, Zhihang Zhong, Yifan Zhan, Sheng Xu, Xiao Sun"
+  venue: "CVPR, 2025"
+  image: /assets/img/maskgaussian-ours.webp
+  comparison: /assets/img/maskgaussian-baseline.webp
+  project: https://maskgaussian.github.io/
+  pdf: https://openaccess.thecvf.com/content/CVPR2025/papers/Liu_MaskGaussian_Adaptive_3D_Gaussian_Representation_from_Probabilistic_Masks_CVPR_2025_paper.pdf
+  arxiv: https://arxiv.org/abs/2412.20522
+  code: https://github.com/kaikai23/MaskGaussian
+  summary: "We propose a learnable mask for selecting 3D Gaussians during training by incorporating it into the strict rendering equation of 3DGS, and write a custom backward CUDA kernel to avoid vanishing gradients for zeroed Gaussians. This leads to 2x-3x faster rendering with almost no quality degradation."
+
+- id: svit
+  title: "Revisiting Token Pruning for Object Detection and Instance Segmentation"
+  authors: "<strong>Yifei Liu</strong>, Mathias Gehrig, Nico Messikommer, Marco Cannici, Davide Scaramuzza"
+  venue: "WACV, 2024"
+  image: /assets/img/svit.webp
+  width: 900
+  height: 517
+  project: /SViT-project-page/index.html
+  pdf: https://arxiv.org/pdf/2306.07050.pdf
+  code: https://github.com/kaikai23/svit
+  summary: "We first adapt token pruning to dense prediction tasks, where directly discarding tokens hurts dense feature maps. By dynamically reactivating unselected tokens, we achieve high pruning rates with little performance loss."

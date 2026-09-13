@@ -1,235 +1,61 @@
 ---
-layout: default
+layout: academic
 ---
+<section class="intro" aria-labelledby="intro-title">
+  <img class="portrait" src="{{ '/assets/img/profile.webp' | relative_url }}" alt="Yifei Liu" width="224" height="224" fetchpriority="high">
+  <div class="intro-copy">
+    <h1 id="intro-title">Hello, I'm Yifei Liu</h1>
+    <div class="bio">{{ content }}</div>
+    <div class="profile-links" aria-label="Contact and profiles">
+      <a href="mailto:{{ site.email }}">Email</a>
+      <a href="{{ '/assets/pdf/yifei_liu_cv.pdf' | relative_url }}">CV</a>
+      <a href="{{ site.scholar_url }}">Scholar</a>
+      <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+      <a href="https://twitter.com/{{ site.twitter_username }}">Twitter</a>
+    </div>
+  </div>
+</section>
 
-<!-- about.html -->
-      <div class="post">
-        <header class="post-header">
-          <h1 class="post-title">
-           {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
-          </h1>
-          <p class="desc">{{ page.subtitle }}</p>
-        </header>
+<section class="recent-news" aria-labelledby="news-title" id="news">
+  <div class="section-heading">
+    <h2 id="news-title">News</h2>
+    <a class="minor-link" href="{{ '/archive.html#news' | relative_url }}">All news</a>
+  </div>
+  <ul class="news-list">
+    {% assign news = site.news | sort: 'date' | reverse %}
+    {% for item in news limit: 3 %}
+    <li><time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: '%Y' }}</time>
+      <div>{{ item.content | remove: '<p>' | remove: '</p>' }}</div></li>
+    {% endfor %}
+  </ul>
+</section>
 
-        <article>
-          <style>
-            .section-progress {
-              display: none;
-              position: fixed;
-              left: 22px;
-              top: 115px;
-              z-index: 20;
-            }
-
-            @media (min-width: 1200px) {
-              .section-progress {
-                display: block;
-              }
-            }
-
-            .section-progress ul {
-              list-style: none;
-              margin: 0;
-              padding: 0;
-              position: relative;
-            }
-
-            .section-progress ul::before {
-              content: "";
-              position: absolute;
-              left: 9px;
-              top: 8px;
-              bottom: 8px;
-              width: 2px;
-              background: var(--global-divider-color);
-            }
-
-            .section-progress a {
-              display: flex;
-              align-items: center;
-              gap: 0.55rem;
-              padding: 0.3rem 0;
-              font-size: 0.86rem;
-              color: var(--global-text-color);
-              opacity: 0.55;
-              text-decoration: none;
-            }
-
-            .section-progress a:hover {
-              opacity: 0.9;
-              text-decoration: none;
-            }
-
-            .section-progress .dot {
-              width: 10px;
-              height: 10px;
-              border-radius: 999px;
-              border: 2px solid var(--global-divider-color);
-              background: var(--global-bg-color);
-              flex: 0 0 10px;
-            }
-
-            .section-progress a.active {
-              opacity: 1;
-              color: var(--global-theme-color);
-              font-weight: 600;
-            }
-
-            .section-progress a.active .dot {
-              border-color: var(--global-theme-color);
-              background: var(--global-theme-color);
-            }
-
-            .home-panels {
-              display: grid;
-              grid-template-columns: 1fr;
-              gap: 1.5rem;
-              align-items: start;
-            }
-
-            @media (min-width: 992px) {
-              .home-panels {
-                grid-template-columns: 1fr 1fr;
-                gap: 2rem;
-              }
-            }
-
-            .home-panel .research-radar {
-              margin: 0;
-            }
-
-            .home-panel .research-radar__chart-wrap {
-              max-width: none;
-            }
-          </style>
-
-          <nav class="section-progress" aria-label="Section progress">
-            <ul>
-              <li><a href="#intro" data-target="intro"><span class="dot"></span><span>Intro</span></a></li>
-              <li><a href="#news" data-target="news"><span class="dot"></span><span>news</span></a></li>
-              <li><a href="#publications" data-target="publications"><span class="dot"></span><span>publications</span></a></li>
-              <li><a href="#projects" data-target="projects"><span class="dot"></span><span>projects</span></a></li>
-              <li><a href="#highlighted-courses" data-target="highlighted-courses"><span class="dot"></span><span>highlighted courses</span></a></li>
-            </ul>
-          </nav>
-
-          {% if page.profile -%}
-          <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
-            {%- if page.profile.image %}
-              {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
-
-              {% if page.profile.image_circular %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
-              {% else %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
-              {% endif %}
-
-              {% include figure.html 
-              path=profile_image_path 
-              class=profile_image_class
-              alt=page.profile.image -%}
-            {% endif -%}
-            {%- if page.profile.address %}
-            <div class="address">
-              {{ page.profile.address }}
-            </div>
-            {%- endif %}
-          </div>
-          {%- endif %}
-
-          <div id="intro" class="clearfix">
-            {{ content }}
-          </div>
-
-          {% if page.news -%}
-          <div id="news" class="home-panels">
-            <div class="home-panel home-panel-news">
-              <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
-              {%- include news.html %}
-            </div>
-            <div class="home-panel home-panel-radar">
-              {%- include research_radar.html %}
-            </div>
-          </div>
-          {%- endif %}
-
-          <!-- Selected papers -->
-          {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
-            {%- include selected_papers.html %}
-          {%- endif %}
-
-          <!-- Papers -->
-          {% if page.papers -%}
-            <div id="publications">
-            {%- include papers.html %}
-            </div>
-          {%- endif %}
-          <br/>
-
-          <!-- Projects -->
-          {% if page.projects -%}
-          <div id="projects">{%- include myprojects.html %}</div>
-          {%- endif %}
-
-          <!-- Highlighted Courses -->
-          {% if page.highlighted_courses -%}
-          <div id="highlighted-courses">
-          {%- include highlighted_courses.html %}
-          </div>
-          {%- endif %}
-
-          <script>
-            (function () {
-              var links = Array.prototype.slice.call(
-                document.querySelectorAll(".section-progress a[data-target]")
-              );
-              if (!links.length) return;
-
-              var targets = links
-                .map(function (link) {
-                  return document.getElementById(link.getAttribute("data-target"));
-                })
-                .filter(Boolean);
-              if (!targets.length) return;
-
-              function setActive(id) {
-                links.forEach(function (link) {
-                  var on = link.getAttribute("data-target") === id;
-                  link.classList.toggle("active", on);
-                });
-              }
-
-              function updateActive() {
-                var current = targets[0];
-                var offset = 130;
-                for (var i = 0; i < targets.length; i += 1) {
-                  if (targets[i].getBoundingClientRect().top - offset <= 0) {
-                    current = targets[i];
-                  }
-                }
-                if (current && current.id) setActive(current.id);
-              }
-
-              window.addEventListener("scroll", updateActive, { passive: true });
-              window.addEventListener("resize", updateActive);
-              updateActive();
-            })();
-          </script>
-
-          <!-- Social -->
-          {%- if page.social %}
-            <div class="social">
-              <div class="contact-icons">
-                {% include social.html %}
-              </div>
-
-              <div class="contact-note">
-                {{ site.contact_note }}
-              </div>
-              
-            </div>
-          {%- endif %}
-        </article>
-
-</div>
+<section class="publications" aria-labelledby="publications-title" id="publications">
+  <h2 id="publications-title">Publications</h2>
+  {% for paper in site.data.publications %}
+  <article class="publication" aria-labelledby="{{ paper.id }}">
+    <a class="publication-media" href="{{ paper.project | relative_url }}" tabindex="-1" aria-hidden="true">
+      {% if paper.comparison %}
+      <div class="comparison">
+        <figure><img src="{{ paper.comparison | relative_url }}" alt="" loading="lazy" width="1024" height="803"><figcaption>3DGS</figcaption></figure>
+        <figure><img src="{{ paper.image | relative_url }}" alt="" loading="lazy" width="1024" height="803"><figcaption>MaskGaussian</figcaption></figure>
+      </div>
+      {% else %}
+      <img src="{{ paper.image | relative_url }}" alt="" loading="lazy" width="{{ paper.width }}" height="{{ paper.height }}">
+      {% endif %}
+    </a>
+    <div class="publication-copy">
+      <h3 id="{{ paper.id }}"><a href="{{ paper.project | relative_url }}">{{ paper.title }}</a></h3>
+      <p class="authors">{{ paper.authors }}</p>
+      <p class="venue">{{ paper.venue }}{% if paper.award %} <strong>{{ paper.award }}</strong>{% endif %}</p>
+      <p class="paper-summary">{{ paper.summary }}</p>
+      <div class="paper-links" aria-label="Links for {{ paper.id }}">
+        <a href="{{ paper.project | relative_url }}">Project</a>
+        {% if paper.pdf %}<a href="{{ paper.pdf }}">PDF</a>{% endif %}
+        {% if paper.arxiv %}<a href="{{ paper.arxiv }}">arXiv</a>{% endif %}
+        {% if paper.code %}<a href="{{ paper.code }}">Code</a>{% endif %}
+      </div>
+    </div>
+  </article>
+  {% endfor %}
+</section>
