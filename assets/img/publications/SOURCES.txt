@@ -1,0 +1,20 @@
+Homepage publication thumbnails, prepared September 2026.
+All images use original research assets, resized to 600 x 600 WebP.
+No generated imagery or modifications to scientific results.
+
+Holi-Spatial: frame at 0.5 seconds, crop 706x706+130+6.
+https://visionary-laboratory.github.io/holi-spatial/after/0572/0572-1.mp4
+
+Proxy-GS: proxy-guided occlusion visualization, crop 420x420+260+505.
+https://visionary-laboratory.github.io/Proxy-GS/static/images/teaser.jpg
+
+Visionary: frame at 2 seconds, crop 1080x1080+455+0.
+https://ai4sports.opengvlab.com/images/homepage/videos/v2.mp4
+
+MaskGaussian: centered 853x853 crop of the rendering/Gaussian visualization.
+https://maskgaussian.github.io/static/images/kitchen_ours_crop.png
+
+SViT: aligned split view of the input image (left) and token-depth map (right).
+Input crop: 488x488+120+580, retaining the left half.
+Token-depth crop: 488x488+788+580, retaining the right half.
+../svit.png (original local project teaser)

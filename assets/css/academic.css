@@ -90,22 +90,20 @@ strong { font-weight: 600; color: var(--text); }
 .news-list { padding: 0; margin: 0; list-style: none; }
 .news-list li { display: grid; grid-template-columns: 3.4rem minmax(0, 1fr); gap: .75rem; padding: .16rem 0; }
 .news-list time { color: var(--muted); font-variant-numeric: tabular-nums; }
-.publication { display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 2rem; align-items: start; padding: 1.5rem 0 1.75rem; border-bottom: 1px solid #f0f0f0; }
-.publications > h2 { margin-bottom: .25rem; }
-.publication:last-child { border-bottom: 0; }
-.publication-media { display: flex; align-items: center; justify-content: center; width: 210px; min-height: 155px; text-decoration: none; }
-.publication-media > img { width: 100%; height: 155px; object-fit: contain; }
+.publication { display: grid; grid-template-columns: 20% minmax(0, 1fr); gap: 1.5rem; align-items: start; padding: 1.5rem 0; }
+.publications > h2 { margin-bottom: 2rem; }
+.publication-media { display: block; width: 100%; aspect-ratio: 1; overflow: hidden; border-radius: 8px; text-decoration: none; }
+.publication-media > img { width: 100%; height: 100%; object-fit: cover; }
+.publication-copy { min-width: 0; }
+.publication h3 { font-family: "Crimson Pro", Georgia, Cambria, serif; font-size: 1.25rem; font-weight: 600; line-height: 1.4; }
 .publication h3 a { color: var(--text); text-decoration: none; }
 .publication h3 a:hover { text-decoration: underline; }
-.authors { margin: .55rem 0 0; font-size: .9rem; line-height: 1.45; }
-.venue { margin: .25rem 0 0; font-size: .875rem; color: var(--muted); }
-.venue strong { margin-left: .4rem; }
-.paper-summary { margin: .65rem 0 0; line-height: 1.5; text-wrap: pretty; }
-.paper-links { gap: .35rem 1.1rem; margin-top: .7rem; }
-.comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px; width: 100%; }
-.comparison figure { margin: 0; }
-.comparison img { width: 100%; aspect-ratio: 1024 / 803; object-fit: contain; }
-.comparison figcaption { font-family: "Source Sans 3", sans-serif; font-size: 12px; color: var(--muted); text-align: center; margin-top: 4px; }
+.authors { margin: .375rem 0 0; font-size: .875rem; line-height: 1.25rem; }
+.venue { margin: .25rem 0 0; font-size: .875rem; line-height: 1.25rem; color: var(--muted); }
+.venue strong { margin-left: .5rem; }
+.paper-summary { margin: .75rem 0 0; line-height: 1.65; text-wrap: pretty; }
+.paper-links { gap: .25rem 1rem; margin-top: .75rem; line-height: 1.25rem; }
+.paper-links a { font-family: "Crimson Pro", Georgia, Cambria, serif; }
 .site-footer { padding-top: 3rem; padding-bottom: 2.5rem; color: var(--muted); font-size: .8rem; text-align: center; }
 .footer-links { justify-content: center; margin-bottom: .8rem; }
 .site-footer p { margin: 0; }
@@ -134,16 +132,12 @@ strong { font-weight: 600; color: var(--text); }
   .portrait { width: 180px; height: 180px; margin: 0 auto; }
   .intro h1 { text-align: center; font-size: 2rem; }
   .profile-links { justify-content: center; }
-  .publication { grid-template-columns: 170px minmax(0, 1fr); gap: 1.25rem; }
-  .publication-media { width: 170px; min-height: 125px; }
-  .publication-media > img { height: 125px; }
+}
+@media (max-width: 767px) {
+  .publication { grid-template-columns: minmax(0, 1fr); }
+  .publication-media { width: min(100%, 16rem); }
 }
 @media (max-width: 540px) {
-  .publication { grid-template-columns: minmax(0, 1fr); gap: 1rem; padding: 1.5rem 0 2rem; }
-  .publication-media { width: 100%; height: 180px; }
-  .publication-media > img { height: 180px; width: 100%; }
-  .comparison { max-width: 320px; }
-  .publication-copy { min-width: 0; }
   .academic-page .project-card > a:first-child { float: none; width: 100%; margin: 0 0 1rem; }
   .academic-page .project-card__teaser { max-height: 180px; }
 }

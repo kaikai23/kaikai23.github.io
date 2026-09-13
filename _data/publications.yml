@@ -3,9 +3,9 @@
   authors: "Yuanyuan Gao*, Hao Li*, <strong>Yifei Liu*</strong>, Xinhao Ji*, Yuning Gong*, Yuanjun Liao, Fangfu Liu, Manyuan Zhang, Yuchen Yang, Dan Xu, ..., Xiao Sun, Dingwen Zhang, Zhihang Zhong"
   venue: "ICML, 2026"
   award: "Oral"
-  image: /assets/img/holi-spatial.webp
-  width: 900
-  height: 506
+  image: /assets/img/publications/holi-spatial.webp
+  width: 600
+  height: 600
   project: https://visionary-laboratory.github.io/holi-spatial/
   pdf: https://arxiv.org/pdf/2603.07660.pdf
   arxiv: https://arxiv.org/abs/2603.07660
@@ -17,9 +17,9 @@
   authors: "Yuanyuan Gao, Yuning Gong, <strong>Yifei Liu</strong>, Jingfeng Li, Dingwen Zhang, Yanci Zhang, Dan Xu, Xiao Sun, Zhihang Zhong"
   venue: "CVPR, 2026"
   award: "Oral, Best Paper Award Candidate"
-  image: /assets/img/proxy-gs.webp
-  width: 1200
-  height: 529
+  image: /assets/img/publications/proxy-gs.webp
+  width: 600
+  height: 600
   project: https://visionary-laboratory.github.io/Proxy-GS
   pdf: https://arxiv.org/pdf/2509.24421.pdf
   arxiv: https://arxiv.org/abs/2509.24421
@@ -30,9 +30,9 @@
   title: "Visionary: The World Model Carrier Built on WebGPU-Powered Gaussian Splatting Platform"
   authors: "Yuning Gong, <strong>Yifei Liu</strong>, Yifan Zhan, Muyao Niu, Xueying Li, ..., Xiao Sun, Zhihang Zhong"
   venue: "arXiv, 2025"
-  image: /assets/img/visionary.webp
-  width: 900
-  height: 425
+  image: /assets/img/publications/visionary.webp
+  width: 600
+  height: 600
   project: https://visionary-laboratory.github.io/visionary/
   pdf: https://arxiv.org/pdf/2512.08478.pdf
   arxiv: https://arxiv.org/abs/2512.08478
@@ -43,8 +43,9 @@
   title: "MaskGaussian: Adaptive 3D Gaussian Representation from Probabilistic Masks"
   authors: "<strong>Yifei Liu</strong>, Zhihang Zhong, Yifan Zhan, Sheng Xu, Xiao Sun"
   venue: "CVPR, 2025"
-  image: /assets/img/maskgaussian-ours.webp
-  comparison: /assets/img/maskgaussian-baseline.webp
+  image: /assets/img/publications/maskgaussian.webp
+  width: 600
+  height: 600
   project: https://maskgaussian.github.io/
   pdf: https://openaccess.thecvf.com/content/CVPR2025/papers/Liu_MaskGaussian_Adaptive_3D_Gaussian_Representation_from_Probabilistic_Masks_CVPR_2025_paper.pdf
   arxiv: https://arxiv.org/abs/2412.20522
@@ -55,9 +56,9 @@
   title: "Revisiting Token Pruning for Object Detection and Instance Segmentation"
   authors: "<strong>Yifei Liu</strong>, Mathias Gehrig, Nico Messikommer, Marco Cannici, Davide Scaramuzza"
   venue: "WACV, 2024"
-  image: /assets/img/svit.webp
-  width: 900
-  height: 517
+  image: /assets/img/publications/svit.webp
+  width: 600
+  height: 600
   project: /SViT-project-page/index.html
   pdf: https://arxiv.org/pdf/2306.07050.pdf
   code: https://github.com/kaikai23/svit

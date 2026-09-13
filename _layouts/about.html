@@ -35,14 +35,7 @@ layout: academic
   {% for paper in site.data.publications %}
   <article class="publication" aria-labelledby="{{ paper.id }}">
     <a class="publication-media" href="{{ paper.project | relative_url }}" tabindex="-1" aria-hidden="true">
-      {% if paper.comparison %}
-      <div class="comparison">
-        <figure><img src="{{ paper.comparison | relative_url }}" alt="" loading="lazy" width="1024" height="803"><figcaption>3DGS</figcaption></figure>
-        <figure><img src="{{ paper.image | relative_url }}" alt="" loading="lazy" width="1024" height="803"><figcaption>MaskGaussian</figcaption></figure>
-      </div>
-      {% else %}
       <img src="{{ paper.image | relative_url }}" alt="" loading="lazy" width="{{ paper.width }}" height="{{ paper.height }}">
-      {% endif %}
     </a>
     <div class="publication-copy">
       <h3 id="{{ paper.id }}"><a href="{{ paper.project | relative_url }}">{{ paper.title }}</a></h3>
