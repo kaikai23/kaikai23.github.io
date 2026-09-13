@@ -14,7 +14,8 @@ https://ai4sports.opengvlab.com/images/homepage/videos/v2.mp4
 MaskGaussian: centered 853x853 crop of the rendering/Gaussian visualization.
 https://maskgaussian.github.io/static/images/kitchen_ours_crop.png
 
-SViT: aligned split view of the input image (left) and token-depth map (right).
-Input crop: 488x488+120+580, retaining the left half.
-Token-depth crop: 488x488+788+580, retaining the right half.
+SViT (svit-prediction.webp): complete instance-segmentation result for all three
+people, retaining their bounding boxes and labels. Crop: 488x488+1495+580.
 ../svit.png (original local project teaser)
+
+svit.webp is the earlier input/token-depth split thumbnail, no longer displayed.

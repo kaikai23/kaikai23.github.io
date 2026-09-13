@@ -56,7 +56,7 @@
   title: "Revisiting Token Pruning for Object Detection and Instance Segmentation"
   authors: "<strong>Yifei Liu</strong>, Mathias Gehrig, Nico Messikommer, Marco Cannici, Davide Scaramuzza"
   venue: "WACV, 2024"
-  image: /assets/img/publications/svit.webp
+  image: /assets/img/publications/svit-prediction.webp
   width: 600
   height: 600
   project: /SViT-project-page/index.html
