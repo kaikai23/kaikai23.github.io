@@ -1,314 +1,673 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
-</head>
-<body>
-
-
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Revisiting Token Pruning for Object Detection and Instance Segmentation</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="https://kaikai23.github.io/" target="_blank">Yifei Liu</a>,</span>
-                <span class="author-block">
-                  <a href="https://magehrig.github.io/" target="_blank">Mathias Gehrig</a>,</span>
-                  <span class="author-block">
-                    <a href="https://messikommernico.github.io/" target="_blank">Nico Messikommer</a>
-                  </span>
-                  <span class="author-block">
-                    <a href="https://marcocannici.github.io/" target="_blank">Marco Cannici</a>
-                  </span>
-                  <span class="author-block">
-                    <a href="https://scholar.google.com/citations?user=SC9wV2kAAAAJ&hl=en" target="_blank">Davide Scaramuzza</a>
-                  </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Department of Informatics<br>University of Zurich, Switzerland</span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/2306.07050.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/uzh-rpg/svit/" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/2306.07050" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SViT | Revisiting Token Pruning for Dense Prediction</title>
+    <meta
+      name="description"
+      content="SViT: Revisiting Token Pruning for Object Detection and Instance Segmentation. WACV 2024. Preserve and reactivate tokens for faster dense prediction."
+    />
+    <link
+      rel="canonical"
+      href="https://kaikai23.github.io/SViT-project-page/index.html"
+    />
+    <meta
+      property="og:title"
+      content="SViT: Revisiting Token Pruning for Dense Prediction"
+    />
+    <meta
+      property="og:description"
+      content="Selective computation. Dense predictions. WACV 2024 research from the Robotics and Perception Group, University of Zurich."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://kaikai23.github.io/SViT-project-page/index.html"
+    />
+    <meta
+      property="og:image"
+      content="https://kaikai23.github.io/SViT-project-page/static/media/social-preview.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="citation_title"
+      content="Revisiting Token Pruning for Object Detection and Instance Segmentation"
+    />
+    <meta name="citation_author" content="Yifei Liu" />
+    <meta name="citation_author" content="Mathias Gehrig" />
+    <meta name="citation_author" content="Nico Messikommer" />
+    <meta name="citation_author" content="Marco Cannici" />
+    <meta name="citation_author" content="Davide Scaramuzza" />
+    <meta name="citation_publication_date" content="2024/01" />
+    <meta
+      name="citation_conference_title"
+      content="IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)"
+    />
+    <meta name="citation_firstpage" content="2658" />
+    <meta name="citation_lastpage" content="2668" />
+    <meta
+      name="citation_pdf_url"
+      content="https://openaccess.thecvf.com/content/WACV2024/papers/Liu_Revisiting_Token_Pruning_for_Object_Detection_and_Instance_Segmentation_WACV_2024_paper.pdf"
+    />
+    <link rel="icon" href="data:," />
+    <link
+      rel="preload"
+      href="../assets/fonts/source-sans-3-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="static/css/svit.css" />
+    <script defer src="static/js/lucide.min.js"></script>
+    <script defer src="static/js/svit.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="container" aria-label="Main navigation">
+        <a class="wordmark" href="#top"
+          >SViT<span class="wordmark-dot" aria-hidden="true"></span
+        ></a>
+        <div class="nav-links">
+          <a href="#method">Method</a><a href="#results">Results</a
+          ><a href="#resources">Resources</a>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section
+        class="paper-header container"
+        id="top"
+        aria-labelledby="paper-title"
+      >
+        <p class="venue">
+          WACV 2024 <span aria-hidden="true">/</span> University of Zurich
+        </p>
+        <h1 id="paper-title">
+          <span class="paper-name">SViT</span
+          ><span class="paper-title"
+            >Revisiting Token Pruning for<br class="desktop-break" />
+            Object Detection and Instance Segmentation</span
+          >
+        </h1>
+        <ul class="authors" aria-label="Authors">
+          <li><a href="https://kaikai23.github.io/">Yifei Liu</a></li>
+          <li><a href="https://magehrig.github.io/">Mathias Gehrig</a></li>
+          <li>
+            <a href="https://messikommernico.github.io/">Nico Messikommer</a>
+          </li>
+          <li><a href="https://marcocannici.github.io/">Marco Cannici</a></li>
+          <li>
+            <a href="https://rpg.ifi.uzh.ch/people_scaramuzza.html"
+              >Davide Scaramuzza</a
+            >
+          </li>
+        </ul>
+        <p class="affiliation">
+          <a href="https://rpg.ifi.uzh.ch/">Robotics and Perception Group</a>,
+          University of Zurich
+        </p>
+        <div class="resource-links" aria-label="Paper resources">
+          <a
+            class="primary-link"
+            href="https://openaccess.thecvf.com/content/WACV2024/papers/Liu_Revisiting_Token_Pruning_for_Object_Detection_and_Instance_Segmentation_WACV_2024_paper.pdf"
+            ><i data-lucide="file-text" aria-hidden="true"></i>Paper</a
+          ><a href="https://github.com/uzh-rpg/svit"
+            ><i data-lucide="github" aria-hidden="true"></i>Code</a
+          ><a href="https://arxiv.org/abs/2306.07050"
+            ><i data-lucide="book-open" aria-hidden="true"></i>arXiv</a
+          ><a href="#video"
+            ><i data-lucide="play" aria-hidden="true"></i>Video</a
+          ><a href="#BibTeX"
+            ><i data-lucide="quote" aria-hidden="true"></i>Cite</a
+          >
+        </div>
+      </section>
+      <section
+        class="visual-section container"
+        id="visualizations"
+        aria-labelledby="visual-title"
+      >
+        <div class="section-toolbar">
+          <h2 class="small-heading" id="visual-title">
+            Selective computation. Dense predictions.
+          </h2>
+          <label class="select-control js-only" hidden
+            >Scene<select id="scene-select" aria-label="Token usage scene">
+              <option value="baseball">Baseball</option>
+              <option value="zebras">Zebras</option>
+              <option value="equestrian">Equestrian</option>
+              <option value="donuts">Donuts</option>
+            </select></label
+          >
+        </div>
+        <div
+          class="visual-triptych"
+          aria-live="polite"
+          aria-busy="false"
+          id="visual-triptych"
+        >
+          <figure>
+            <figcaption>
+              <span class="panel-number">01</span> Input image
+            </figcaption>
+            <div class="visual-frame">
+              <img
+                id="scene-input"
+                src="static/media/baseball-input.webp"
+                width="654"
+                height="486"
+                alt="The complete baseball scene, with a batter, catcher, and umpire."
+                fetchpriority="high"
+              />
             </div>
+          </figure>
+          <figure>
+            <figcaption>
+              <span class="panel-number">02</span> Token usage
+            </figcaption>
+            <div class="visual-frame token-frame">
+              <img
+                id="token-context"
+                src="static/media/baseball-input.webp"
+                width="654"
+                height="486"
+                alt=""
+              /><img
+                id="scene-tokens"
+                src="static/media/baseball-tokens.webp"
+                width="654"
+                height="486"
+                alt="Token usage heatmap of the same three people; brighter tokens are processed by more layers."
+              />
+            </div>
+          </figure>
+          <figure>
+            <figcaption>
+              <span class="panel-number">03</span> Detection &amp; segmentation
+            </figcaption>
+            <div class="visual-frame">
+              <img
+                id="scene-prediction"
+                src="static/media/baseball-prediction.webp"
+                width="654"
+                height="486"
+                alt="SViT predictions for all three people and the baseball equipment."
+              />
+            </div>
+          </figure>
+        </div>
+        <div class="visual-caption">
+          <p>
+            Computation follows the objects, down to their contours.
+            <span class="muted"
+              >Token usage counts the Transformer layers that process each
+              token, not a binary keep/drop mask.</span
+            >
+          </p>
+          <label class="opacity-control js-only" hidden
+            >Heatmap opacity<input
+              id="heatmap-opacity"
+              type="range"
+              min="0"
+              max="100"
+              value="100"
+              step="1"
+            /><output for="heatmap-opacity" id="opacity-value"
+              >100%</output
+            ></label
+          >
+        </div>
+        <p class="figure-source">
+          Published visualizations:
+          <a
+            href="https://openaccess.thecvf.com/content/WACV2024/papers/Liu_Revisiting_Token_Pruning_for_Object_Detection_and_Instance_Segmentation_WACV_2024_paper.pdf#page=1"
+            >Figures 1 &amp; 4</a
+          >. Each row shows the same complete scene.
+        </p>
+      </section>
+      <section class="metrics-band" aria-label="Key results">
+        <div class="container metrics">
+          <div>
+            <p class="metric-value">34<span>%</span></p>
+            <p>Faster whole-network inference</p>
+          </div>
+          <div>
+            <p class="metric-value">46<span>%</span></p>
+            <p>Faster backbone inference</p>
+          </div>
+          <div>
+            <p class="metric-value">0.3<span> AP</span></p>
+            <p>Drop in both box and mask AP</p>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static/images/svit.png" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Vision Transformers (ViTs) have shown impressive performance in computer vision, but their high computational cost, quadratic in the number of tokens, limits their adoption in computation-constrained applications. However, this large number of tokens may not be necessary, as not all tokens are equally important.
-            In this paper, we investigate token pruning to accelerate inference for object detection and instance segmentation, extending prior works from image classification. Through extensive experiments, we offer four insights for dense tasks:
-            (i) tokens should not be completely pruned and discarded, but rather preserved in the feature maps for later use.
-            (ii) reactivating previously pruned tokens can further enhance model performance.
-            (iii) a dynamic pruning rate based on images is better than a fixed pruning rate.
-            (iv) a lightweight, 2-layer MLP can effectively prune tokens, achieving accuracy comparable with complex gating networks with a simpler design.
-            We assess the effects of these design decisions on the COCO dataset and introduce an approach that incorporates these findings, showing a reduction in performance decline from <b>~1.5 mAP</b> to <b>~0.3 mAP</b> in both boxes and masks, compared to existing token pruning methods.
-            In relation to the dense counterpart that utilizes all tokens, our method realizes an increase in inference speed, achieving up to <b>34%</b> faster performance for the entire network and <b>46%</b> for the backbone.
+        <p class="metric-note container">
+          Reported gains for SViT-S vs. dense DeiT-S in ViT-Adapter + Mask
+          R-CNN. COCO 2017; NVIDIA A100; batch size 1.
+        </p>
+      </section>
+      <section
+        class="section container"
+        id="method"
+        aria-labelledby="method-title"
+      >
+        <div class="section-intro">
+          <p class="eyebrow">The method</p>
+          <h2 id="method-title">Prune computation,<br />not information.</h2>
+          <p class="lead">
+            Dense prediction needs a feature at every location. Instead of
+            discarding pruned tokens, SViT preserves their features and lets
+            later layers reactivate them.
           </p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-<!--&lt;!&ndash; Image carousel &ndash;&gt;-->
-<!--<section class="hero is-small">-->
-<!--  <div class="hero-body">-->
-<!--    <div class="container">-->
-<!--      <div id="results-carousel" class="carousel results-carousel">-->
-<!--       <div class="item">-->
-<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
-<!--        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>-->
-<!--        <h2 class="subtitle has-text-centered">-->
-<!--          First image description.-->
-<!--        </h2>-->
-<!--      </div>-->
-<!--      <div class="item">-->
-<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
-<!--        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>-->
-<!--        <h2 class="subtitle has-text-centered">-->
-<!--          Second image description.-->
-<!--        </h2>-->
-<!--      </div>-->
-<!--      <div class="item">-->
-<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
-<!--        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>-->
-<!--        <h2 class="subtitle has-text-centered">-->
-<!--         Third image description.-->
-<!--       </h2>-->
-<!--     </div>-->
-<!--     <div class="item">-->
-<!--      &lt;!&ndash; Your image here &ndash;&gt;-->
-<!--      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>-->
-<!--      <h2 class="subtitle has-text-centered">-->
-<!--        Fourth image description.-->
-<!--      </h2>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
-<!--</div>-->
-<!--</section>-->
-<!--&lt;!&ndash; End image carousel &ndash;&gt;-->
-
-
-
-
-<!--&lt;!&ndash; Youtube video &ndash;&gt;-->
-<!--<section class="hero is-small is-light">-->
-<!--  <div class="hero-body">-->
-<!--    <div class="container">-->
-<!--      &lt;!&ndash; Paper video. &ndash;&gt;-->
-<!--      <h2 class="title is-3">Video Presentation</h2>-->
-<!--      <div class="columns is-centered has-text-centered">-->
-<!--        <div class="column is-four-fifths">-->
-<!--          -->
-<!--          <div class="publication-video">-->
-<!--            &lt;!&ndash; Youtube embed code here &ndash;&gt;-->
-<!--            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
-<!--&lt;!&ndash; End youtube video &ndash;&gt;-->
-
-
-<!--&lt;!&ndash; Video carousel &ndash;&gt;-->
-<!--<section class="hero is-small">-->
-<!--  <div class="hero-body">-->
-<!--    <div class="container">-->
-<!--      <h2 class="title is-3">Another Carousel</h2>-->
-<!--      <div id="results-carousel" class="carousel results-carousel">-->
-<!--        <div class="item item-video1">-->
-<!--          <video poster="" id="video1" autoplay controls muted loop height="100%">-->
-<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
-<!--            <source src="static/videos/carousel1.mp4"-->
-<!--            type="video/mp4">-->
-<!--          </video>-->
-<!--        </div>-->
-<!--        <div class="item item-video2">-->
-<!--          <video poster="" id="video2" autoplay controls muted loop height="100%">-->
-<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
-<!--            <source src="static/videos/carousel2.mp4"-->
-<!--            type="video/mp4">-->
-<!--          </video>-->
-<!--        </div>-->
-<!--        <div class="item item-video3">-->
-<!--          <video poster="" id="video3" autoplay controls muted loop height="100%">\-->
-<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
-<!--            <source src="static/videos/carousel3.mp4"-->
-<!--            type="video/mp4">-->
-<!--          </video>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
-<!--&lt;!&ndash; End video carousel &ndash;&gt;-->
-
-
-
-
-
-
-<!--&lt;!&ndash; Paper poster &ndash;&gt;-->
-<!--<section class="hero is-small is-light">-->
-<!--  <div class="hero-body">-->
-<!--    <div class="container">-->
-<!--      <h2 class="title">Poster</h2>-->
-
-<!--      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">-->
-<!--          </iframe>-->
-<!--        -->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </section>-->
-<!--&lt;!&ndash;End paper poster &ndash;&gt;-->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@article{liu2023revisiting,
-  title={Revisiting Token <Pr></Pr>uning for Object Detection and Instance Segmentation},
-  author={Liu, Yifei and Gehrig, Mathias and Messikommer, Nico and Cannici, Marco and Scaramuzza, Davide},
-  journal={arXiv preprint arXiv:2306.07050},
-  year={2023}
+        <figure class="method-figure">
+          <img
+            src="static/media/method.webp"
+            alt="A two-layer MLP selects tokens before each Transformer block. Unselected tokens bypass the block, preserve their features, and may be selected again later."
+            width="1652"
+            height="430"
+            loading="lazy"
+          />
+          <figcaption>
+            Selected tokens are gathered, processed, and scattered back into the
+            dense feature map. Unselected tokens keep their previously computed
+            features.
+            <a
+              href="static/media/method.webp"
+              target="_blank"
+              rel="noopener"
+              aria-label="Open the full-resolution SViT method figure"
+              ><i data-lucide="maximize-2" aria-hidden="true"></i
+            ></a>
+          </figcaption>
+        </figure>
+        <div class="insights">
+          <article>
+            <span class="insight-number">01</span>
+            <h3>Preserve</h3>
+            <p>
+              Keep pruned tokens in the feature map so the detection head can
+              still use them.
+            </p>
+          </article>
+          <article>
+            <span class="insight-number">02</span>
+            <h3>Reactivate</h3>
+            <p>
+              A token skipped by one block can return in a later block,
+              recovering useful detail.
+            </p>
+          </article>
+          <article>
+            <span class="insight-number">03</span>
+            <h3>Adapt</h3>
+            <p>
+              Allocate more tokens to complex images and fewer to simple images.
+            </p>
+          </article>
+          <article>
+            <span class="insight-number">04</span>
+            <h3>Keep it simple</h3>
+            <p>
+              A lightweight, two-layer MLP is sufficient to make the selection.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section
+        class="section reactivation-section"
+        id="reactivation"
+        aria-labelledby="reactivation-title"
+      >
+        <div class="container">
+          <div class="section-toolbar">
+            <div>
+              <p class="eyebrow">Inside token pruning</p>
+              <h2 id="reactivation-title">
+                Skipped now.<br />Useful again later.
+              </h2>
+            </div>
+            <label class="select-control js-only" hidden
+              >Scene<select
+                id="reactivation-select"
+                aria-label="Reactivation scene"
+              >
+                <option value="football">Football</option>
+                <option value="office">Office</option>
+              </select></label
+            >
+          </div>
+          <p class="lead constrained">
+            Pruning does not have to be permanent. SViT can reactivate
+            previously skipped tokens when later layers need them.
+          </p>
+          <div
+            class="reactivation-pair"
+            aria-live="polite"
+            aria-busy="false"
+            id="reactivation-pair"
+          >
+            <figure>
+              <figcaption>Input image</figcaption>
+              <img
+                id="reactivation-input"
+                src="static/media/football-input.webp"
+                width="492"
+                height="364"
+                loading="lazy"
+                alt="Two football players and a ball in the original scene."
+              />
+            </figure>
+            <figure>
+              <figcaption>Pruning &amp; reactivation</figcaption>
+              <img
+                id="reactivation-pruned"
+                src="static/media/football-reactivation.webp"
+                width="492"
+                height="364"
+                loading="lazy"
+                alt="The same football scene with active image tokens, cyan tokens that will reactivate, and white tokens that will not."
+              />
+            </figure>
+          </div>
+          <ul class="token-legend" aria-label="Pruning visualization legend">
+            <li>
+              <span class="swatch image-swatch" aria-hidden="true"></span>Image
+              patches: active tokens
+            </li>
+            <li>
+              <span class="swatch cyan" aria-hidden="true"></span>Cyan: pruned,
+              reactivated later
+            </li>
+            <li>
+              <span class="swatch white" aria-hidden="true"></span>White:
+              pruned, not reactivated later
+            </li>
+          </ul>
+          <p class="figure-source">
+            Actual model visualizations from
+            <a
+              href="https://openaccess.thecvf.com/content/WACV2024/papers/Liu_Revisiting_Token_Pruning_for_Object_Detection_and_Instance_Segmentation_WACV_2024_paper.pdf#page=7"
+              >Figure 5b</a
+            >. These are distinct from the cumulative token-usage heatmaps
+            above.
+          </p>
+          <details class="figure-details">
+            <summary>Layer-wise reactivation on COCO</summary>
+            <div class="details-content">
+              <img
+                src="static/media/reactivation-chart.webp"
+                width="952"
+                height="728"
+                loading="lazy"
+                alt="Figure 5a: ratios of pruned tokens reused in later layers, immediately reused in the next layer, and not reused, across layers 4 to 12."
+              />
+              <p>
+                Many tokens pruned in early layers are reused later. More than
+                half of reactivated tokens are reused in the immediately
+                succeeding layer.
+                <a
+                  href="https://openaccess.thecvf.com/content/WACV2024/papers/Liu_Revisiting_Token_Pruning_for_Object_Detection_and_Instance_Segmentation_WACV_2024_paper.pdf#page=7"
+                  >Section 4.3</a
+                >
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
+      <section
+        class="section container"
+        id="results"
+        aria-labelledby="results-title"
+      >
+        <div class="section-toolbar">
+          <div>
+            <p class="eyebrow">COCO 2017</p>
+            <h2 id="results-title">
+              More speed.<br />Nearly the same accuracy.
+            </h2>
+          </div>
+          <fieldset class="segmented js-only" hidden>
+            <legend class="sr-only">Model scale</legend>
+            <label><input type="radio" name="scale" value="tiny" />Tiny</label
+            ><label
+              ><input
+                type="radio"
+                name="scale"
+                value="small"
+                checked
+              />Small</label
+            >
+          </fieldset>
+        </div>
+        <p class="lead constrained" id="results-summary">
+          SViT-S retains 48.2 box AP and 42.5 mask AP, while improving
+          whole-network throughput from 11.70 to 15.75 images per second.
+        </p>
+        <div
+          class="table-scroll"
+          role="region"
+          aria-label="Token pruning benchmark comparison"
+          tabindex="0"
+        >
+          <table id="results-table">
+            <caption>
+              <span id="scale-name">Small</span>
+              models in ViT-Adapter + Mask R-CNN
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Backbone</th>
+                <th scope="col">Box AP &#8593;</th>
+                <th scope="col">Mask AP &#8593;</th>
+                <th scope="col">Network FPS &#8593;</th>
+                <th scope="col">Backbone FPS &#8593;</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="baseline">
+                <th scope="row">DeiT <span>dense</span></th>
+                <td>48.5</td>
+                <td>42.8</td>
+                <td>11.70</td>
+                <td>14.20</td>
+              </tr>
+              <tr>
+                <th scope="row">EViT</th>
+                <td>47.1</td>
+                <td>41.6</td>
+                <td>15.34</td>
+                <td>20.01</td>
+              </tr>
+              <tr>
+                <th scope="row">EvoViT</th>
+                <td>47.2</td>
+                <td>41.6</td>
+                <td>15.48</td>
+                <td>20.26</td>
+              </tr>
+              <tr>
+                <th scope="row">ATS</th>
+                <td>46.7</td>
+                <td>41.1</td>
+                <td>11.63</td>
+                <td>14.24</td>
+              </tr>
+              <tr>
+                <th scope="row">DynamicViT</th>
+                <td colspan="4" class="nonconvergence">
+                  Training did not converge
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">DynamicViT + preserve</th>
+                <td>47.2</td>
+                <td>41.6</td>
+                <td>15.66</td>
+                <td>20.79</td>
+              </tr>
+              <tr class="ours">
+                <th scope="row">SViT <span>ours</span></th>
+                <td>48.2</td>
+                <td>42.5</td>
+                <td>15.75</td>
+                <td>20.78</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="figure-source">
+          Source:
+          <a
+            href="https://openaccess.thecvf.com/content/WACV2024/papers/Liu_Revisiting_Token_Pruning_for_Object_Detection_and_Instance_Segmentation_WACV_2024_paper.pdf#page=8"
+            >Table 5</a
+          >. Single NVIDIA A100, batch size 1. FPS is measured throughput, not
+          FLOPs or an estimated speedup.
+        </p>
+        <div class="analysis-row">
+          <figure>
+            <img
+              src="static/media/speed-accuracy.webp"
+              width="1200"
+              height="776"
+              loading="lazy"
+              alt="Published speed-accuracy plot: SViT variants outperform the dense DeiT speed-accuracy trade-off across several keeping ratios."
+            />
+            <figcaption>
+              Speed-accuracy trade-off across pruning rates. Figure 7.
+            </figcaption>
+          </figure>
+          <div>
+            <h3>A better trade-off,<br />not free computation.</h3>
+            <p>
+              SViT consistently improves the speed-accuracy trade-off in these
+              experiments. More aggressive pruning still reduces accuracy,
+              especially when very few tokens remain in the last blocks.
+            </p>
+            <p class="muted">
+              This study focuses on isotropic ViT backbones for object detection
+              and instance segmentation, not pyramidal transformers.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section video-section"
+        id="video"
+        aria-labelledby="video-title"
+      >
+        <div class="container">
+          <p class="eyebrow">Presentation</p>
+          <h2 id="video-title">The paper, in motion.</h2>
+          <div class="video-player" id="video-player">
+            <img
+              src="static/media/social-preview.jpg"
+              width="1200"
+              height="630"
+              loading="lazy"
+              alt="SViT presentation preview, showing input, token usage, and predictions."
+            /><a
+              class="video-play"
+              id="video-play"
+              href="https://www.youtube.com/watch?v=LlMIyEG8wcs"
+              ><i data-lucide="play" aria-hidden="true"></i
+              ><span>Watch presentation</span></a
+            >
+          </div>
+          <a
+            class="text-link"
+            href="https://www.youtube.com/watch?v=LlMIyEG8wcs"
+            >Watch on YouTube
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i
+          ></a>
+        </div>
+      </section>
+      <section
+        class="section container"
+        id="resources"
+        aria-labelledby="resources-title"
+      >
+        <p class="eyebrow">Open research</p>
+        <h2 id="resources-title">Paper, code &amp; models.</h2>
+        <div class="resource-grid">
+          <div>
+            <h3>Read</h3>
+            <a
+              href="https://openaccess.thecvf.com/content/WACV2024/papers/Liu_Revisiting_Token_Pruning_for_Object_Detection_and_Instance_Segmentation_WACV_2024_paper.pdf"
+              >WACV 2024 paper
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i></a
+            ><a
+              href="https://openaccess.thecvf.com/content/WACV2024/supplemental/Liu_Revisiting_Token_Pruning_WACV_2024_supplemental.pdf"
+              >Supplementary material
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i></a
+            ><a href="https://arxiv.org/abs/2306.07050"
+              >arXiv:2306.07050
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i
+            ></a>
+          </div>
+          <div>
+            <h3>Reproduce</h3>
+            <a href="https://github.com/uzh-rpg/svit"
+              >Official code <i data-lucide="github" aria-hidden="true"></i></a
+            ><a href="https://github.com/uzh-rpg/svit#results"
+              >Checkpoints &amp; training logs
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i></a
+            ><a href="https://github.com/uzh-rpg/svit#image-demo"
+              >Token-pruning visualization code
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <section class="citation" id="BibTeX" aria-labelledby="citation-title">
+          <div class="section-toolbar">
+            <h3 id="citation-title">Citation</h3>
+            <button
+              class="icon-button js-only"
+              type="button"
+              id="copy-citation"
+              aria-label="Copy BibTeX citation"
+              data-tooltip="Copy BibTeX"
+              hidden
+            >
+              <i data-lucide="copy" aria-hidden="true"></i>
+            </button>
+          </div>
+          <pre><code id="bibtex">@InProceedings{Liu_2024_WACV,
+  author    = {Liu, Yifei and Gehrig, Mathias and Messikommer, Nico and Cannici, Marco and Scaramuzza, Davide},
+  title     = {Revisiting Token Pruning for Object Detection and Instance Segmentation},
+  booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  month     = {January},
+  year      = {2024},
+  pages     = {2658-2668}
 }</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
+          <p id="copy-status" class="copy-status" role="status"></p>
+        </section>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          <a class="wordmark" href="#top">SViT</a
+          ><span>Robotics and Perception Group, University of Zurich</span>
+        </p>
+        <p>
+          <a href="https://kaikai23.github.io/">Yifei Liu</a
+          ><span>WACV 2024</span>
+        </p>
+        <p class="credits">
+          Original page credits:
+          <a
+            href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+            >Academic Project Page Template</a
+          >
+          and <a href="https://nerfies.github.io/">Nerfies</a>. Website design:
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/"
+            >CC BY-SA 4.0</a
+          >. Research figures remain with their respective authors.
+        </p>
       </div>
-    </div>
-  </div>
-</footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
+    </footer>
   </body>
-  </html>
+</html>

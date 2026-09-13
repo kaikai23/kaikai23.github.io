@@ -56,10 +56,10 @@
   title: "Revisiting Token Pruning for Object Detection and Instance Segmentation"
   authors: "<strong>Yifei Liu</strong>, Mathias Gehrig, Nico Messikommer, Marco Cannici, Davide Scaramuzza"
   venue: "WACV, 2024"
-  image: /assets/img/publications/svit-prediction.webp
+  image: /assets/img/publications/svit-token-usage.webp
   width: 600
   height: 600
   project: /SViT-project-page/index.html
   pdf: https://arxiv.org/pdf/2306.07050.pdf
-  code: https://github.com/kaikai23/svit
+  code: https://github.com/uzh-rpg/svit
   summary: "We first adapt token pruning to dense prediction tasks, where directly discarding tokens hurts dense feature maps. By dynamically reactivating unselected tokens, we achieve high pruning rates with little performance loss."

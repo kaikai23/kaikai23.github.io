@@ -1,44 +1,43 @@
-# Academic Project Page Template
-This is an academic paper project page template.
+# SViT Project Website
 
+Project page for **Revisiting Token Pruning for Object Detection and Instance
+Segmentation**, WACV 2024, pp. 2658-2668.
 
-Example project pages built using this template are:
-- https://www.vision.huji.ac.il/deepsim/
-- https://www.vision.huji.ac.il/3d_ads/
-- https://www.vision.huji.ac.il/ssrl_ad/
-- https://www.vision.huji.ac.il/conffusion/
+Live URL: https://kaikai23.github.io/SViT-project-page/index.html
 
+## Structure
 
-## Start using the template
-To start using the template click on `Use this Template`.
+- `index.html`: paper, authors, visualizations, results, resources, and citation.
+- `static/css/svit.css`: standalone responsive styles; reuses the homepage's
+  locally hosted Source Sans 3 and Crimson Pro fonts.
+- `static/js/svit.js`: scene switching, opacity control, model-scale comparison,
+  citation copying, and click-to-load YouTube presentation.
+- `static/media/`: crops of published figures. Provenance is in `SOURCES.txt`.
+- `static/js/lucide.min.js`: locally hosted Lucide 0.468.0 icons.
 
-The template uses html for controlling the content and css for controlling the style. 
-To edit the websites contents edit the `index.html` file. It contains different HTML "building blocks", use whichever ones you need and comment out the rest.  
+The page is static HTML and does not require Jekyll or a JavaScript framework.
+It can be previewed through any local HTTP server serving the repository root.
+It is also included in the parent site's existing GitHub Pages deployment.
+With JavaScript disabled, the default figures, Small-model table, paper resources,
+video link, and full citation remain available.
 
-**IMPORTANT!** Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be a dreambooth image of me.
+## Scientific Content
 
-## Components
-- Teaser video
-- Images Carousel
-- Youtube embedding
-- Video Carousel
-- PDF Poster
-- Bibtex citation
+The token-usage heatmaps count how many Transformer layers process each token.
+They are not per-layer binary pruning masks. The separate reactivation examples
+come from Figure 5b: cyan marks currently pruned tokens reused later, and white
+marks tokens not reactivated later.
 
-## Tips:
-- The `index.html` file contains comments instructing you what to replace, you should follow these comments.
-- The `meta` tags in the `index.html` file are used to provide metadata about your paper 
-(e.g. helping search engine index the website, showing a preview image when sharing the website, etc.)
-- The resolution of images and videos can usually be around 1920-2048, there rarely a need for better resolution that take longer to load. 
-- All the images and videos you use should be compressed to allow for fast loading of the website (and thus better indexing by search engines). For images, you can use [TinyPNG](https://tinypng.com), for videos you can need to find the tradeoff between size and quality.
-- When using large video files (larger than 10MB), it's better to use youtube for hosting the video as serving the video from the website can take time.
-- Using a tracker can help you analyze the traffic and see where users came from. [statcounter](https://statcounter.com) is a free, easy to use tracker that takes under 5 minutes to set up. 
-- This project page can also be made into a github pages website.
-- Replace the favicon to one of your choosing (the default one is of the Hebrew University). 
-- Suggestions, improvements and comments are welcome, simply open an issue or contact me. You can find my contact information at [https://pages.cs.huji.ac.il/eliahu-horwitz/](https://pages.cs.huji.ac.il/eliahu-horwitz/)
+Both result-table variants are transcribed from Table 5 of the published WACV
+paper. Throughput was measured with batch size 1 on a single NVIDIA A100.
+The visualizations are published model outputs, not browser-side inference.
 
-## Acknowledgments
-Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
+## Attribution
 
-## Website License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+The earlier page used the Academic Project Page Template by Eliahu Horwitz,
+based on Nerfies. This redesigned website retains those credits and the
+CC BY-SA 4.0 website-design license. Research figures and text are separate
+content and remain with their respective authors. Lucide uses the ISC license;
+the bundled fonts use the SIL Open Font License (see `../assets/fonts/`).
+
+Legacy template assets are retained but not loaded by the new page.

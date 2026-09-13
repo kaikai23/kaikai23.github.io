@@ -1,0 +1,37 @@
+SViT website assets, September 2026.
+All scientific visuals are cropped from original published figures. No generated
+research outputs, synthetic masks, or invented measurements are used.
+
+Official paper:
+https://openaccess.thecvf.com/content/WACV2024/papers/Liu_Revisiting_Token_Pruning_for_Object_Detection_and_Instance_Segmentation_WACV_2024_paper.pdf
+
+Official code, checkpoints, and reproduction instructions:
+https://github.com/uzh-rpg/svit
+
+baseball-{input,tokens,prediction}.webp:
+Figure 1, from the existing high-resolution teaser at /assets/img/svit.png.
+Crops: 654x486+38+581, 654x486+705+581, 654x486+1376+581.
+
+{zebras,equestrian,donuts}-{input,tokens,prediction}.webp:
+Figure 4, image extracted directly from PDF page 5 (2352x1282 pixels).
+Input, token, prediction column origins: x=7, 582, 1218; width=556.
+Row origins and heights: zebras y=11,h=367; equestrian y=402,h=366;
+donuts y=795,h=406. Ground-truth columns are not used as predictions.
+
+{football,office}-{input,reactivation}.webp:
+Figure 5b, PDF page 7 (1510x808 pixels).
+Input x=1; pruning/reactivation x=503. Football y=4; office y=377.
+All crops are 492x364. Ground-truth columns are not used as predictions.
+
+method.webp: top of Figure 1 from PDF page 1; crop 1652x430+0+0.
+reactivation-chart.webp: Figure 5a extracted from PDF page 7.
+speed-accuracy.webp: Figure 7 extracted from PDF page 8; resized to 1200px wide.
+
+social-preview.jpg: typographic composition of SViT title, venue, attribution,
+and the three original baseball images. Also used as the video poster.
+
+Video presentation (user-provided link):
+https://www.youtube.com/watch?v=LlMIyEG8wcs
+
+Image crops remove surrounding paper layout, not scientific content. WebP files
+are compressed at quality 90 (plots at 92) and are not upscaled.

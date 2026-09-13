@@ -14,8 +14,10 @@ https://ai4sports.opengvlab.com/images/homepage/videos/v2.mp4
 MaskGaussian: centered 853x853 crop of the rendering/Gaussian visualization.
 https://maskgaussian.github.io/static/images/kitchen_ours_crop.png
 
-SViT (svit-prediction.webp): complete instance-segmentation result for all three
-people, retaining their bounding boxes and labels. Crop: 488x488+1495+580.
+SViT (svit-token-usage.webp): two complete, aligned views of the same scene,
+stacked vertically and labeled Input / Token usage. No split across people.
+Input crop: 654x320+38+704. Token crop: 654x320+705+704.
+Both show the entire group of three people. Composed into a 600x600 thumbnail.
 ../svit.png (original local project teaser)
 
-svit.webp is the earlier input/token-depth split thumbnail, no longer displayed.
+svit.webp and svit-prediction.webp are previous thumbnails, no longer displayed.
