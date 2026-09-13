@@ -8,6 +8,6 @@ I am a Ph.D. candidate at [Beihang University](https://www.buaa.edu.cn/) and [Sh
 
 My research focuses on **sparse computer vision and spatial understanding with vision-language models**. I work on efficient 3D representations and learning to understand the 3D world. My current exploration is on agentic RL for spatial tasks.
 
-Previously, I was a research assistant at [ETH Zurich](https://ethz.ch/en.html). I received my M.Sc. from the [University of Zurich](https://www.uzh.ch/en.html), working with Prof. [Davide Scaramuzza](https://rpg.ifi.uzh.ch/people_scaramuzza.html) at the Robotics and Perception Group, and my B.Sc. in Mathematics and Applied Mathematics from [USTC](https://en.ustc.edu.cn/).
+Previously, I did my Master's thesis in [ETH Zurich](https://ethz.ch/en.html) and [University of Zurich](https://www.uzh.ch/en.html), advised by Prof. [Davide Scaramuzza](https://rpg.ifi.uzh.ch/people_scaramuzza.html), and received Bachelor in [University of Science and Technology of China](https://en.ustc.edu.cn/).
 
 Feel free to get in touch about research and collaboration.
