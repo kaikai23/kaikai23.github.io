@@ -2,7 +2,7 @@
   title: "MaskGaussian++: Probabilistic Masks for General 3D Gaussian Representation"
   authors: "<strong>Yifei Liu*</strong>, Yuanyuan Gao*, Yifan Zhan, Sheng Xu, Yuning Gong, Jiaqi Chen, Yuchen Yang, Dingwen Zhang, Yinqiang Zheng, Xiao Sun, Zhihang Zhong"
   venue: "TPAMI, 2026 (accepted; to appear)"
-  image: /assets/img/publications/maskgaussian.webp
+  image: /assets/img/publications/maskgaussian-plus-plus.webp
   width: 600
   height: 600
   summary: "A masked rasterization supporting neural, dynamic 4D, and large-scale distributed Gaussian Splatting. A log-linear scaling law between the number of primitives and rendering quality, with 2x more efficient scaling than Grendel-GS."
