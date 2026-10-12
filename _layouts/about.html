@@ -37,26 +37,28 @@ layout: academic
 <section class="publications" aria-labelledby="publications-title" id="publications">
   <h2 id="publications-title">Publications</h2>
   {% for paper in site.data.publications %}
+  {% assign paper_url = paper.project | default: paper.paper %}
   <article class="publication" aria-labelledby="{{ paper.id }}">
-    {% if paper.project %}
-    <a class="publication-media" href="{{ paper.project | relative_url }}" tabindex="-1" aria-hidden="true">
+    {% if paper_url %}
+    <a class="publication-media" href="{{ paper_url | relative_url }}" tabindex="-1" aria-hidden="true">
     {% else %}
     <div class="publication-media" aria-hidden="true">
     {% endif %}
       <img src="{{ paper.image | relative_url }}" alt="" loading="lazy" width="{{ paper.width }}" height="{{ paper.height }}">
-    {% if paper.project %}
+    {% if paper_url %}
     </a>
     {% else %}
     </div>
     {% endif %}
     <div class="publication-copy">
-      <h3 id="{{ paper.id }}">{% if paper.project %}<a href="{{ paper.project | relative_url }}">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}</h3>
+      <h3 id="{{ paper.id }}">{% if paper_url %}<a href="{{ paper_url | relative_url }}">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}</h3>
       <p class="authors">{{ paper.authors }}</p>
       <p class="venue">{{ paper.venue }}{% if paper.award %} <strong>{{ paper.award }}</strong>{% endif %}</p>
       <p class="paper-summary">{{ paper.summary }}</p>
-      {% if paper.project or paper.pdf or paper.arxiv or paper.code %}
+      {% if paper.project or paper.paper or paper.pdf or paper.arxiv or paper.code %}
       <div class="paper-links" aria-label="Links for {{ paper.id }}">
         {% if paper.project %}<a href="{{ paper.project | relative_url }}">Project</a>{% endif %}
+        {% if paper.paper %}<a href="{{ paper.paper }}">Paper</a>{% endif %}
         {% if paper.pdf %}<a href="{{ paper.pdf }}">PDF</a>{% endif %}
         {% if paper.arxiv %}<a href="{{ paper.arxiv }}">arXiv</a>{% endif %}
         {% if paper.code %}<a href="{{ paper.code }}">Code</a>{% endif %}
