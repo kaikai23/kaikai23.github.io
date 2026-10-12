@@ -5,7 +5,7 @@
   image: /assets/img/publications/maskgaussian.webp
   width: 600
   height: 600
-  summary: "We extend masked rasterization to neural, dynamic 4D, and large-scale distributed Gaussian splatting, showing that probabilistic masks provide a general mechanism for reducing redundancy while preserving rendering quality. We also identify a log-linear scaling law between the number of primitives and rendering quality, and show 2x more efficient scaling than Grendel-GS."
+  summary: "A masked rasterization supporting neural, dynamic 4D, and large-scale distributed Gaussian Splatting. A log-linear scaling law between the number of primitives and rendering quality, with 2x more efficient scaling than Grendel-GS."
 
 - id: holi-spatial
   title: "Holi-Spatial: Evolving Video Streams into Holistic 3D Spatial Intelligence"
