@@ -2,7 +2,7 @@
   title: "MaskGaussian++: Probabilistic Masks for General 3D Gaussian Representation"
   authors: "<strong>Yifei Liu*</strong>, Yuanyuan Gao*, Yifan Zhan, Sheng Xu, Yuning Gong, Jiaqi Chen, Yuchen Yang, Dingwen Zhang, Yinqiang Zheng, Xiao Sun, Zhihang Zhong"
   venue: "TPAMI, 2026"
-  image: /assets/img/publications/maskgaussian-plus-plus.webp
+  image: /assets/img/publications/maskgaussian-plus-plus-building-ssim.webp
   width: 600
   height: 600
   paper: https://ieeexplore.ieee.org/document/11724579
