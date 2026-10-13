@@ -11,3 +11,13 @@ _site
 Gemfile.lock
 vendor
 
+# Keep local CVs and education records out of the public repository.
+resume_ai_internship_zh.*
+/assets/pdf/yifei_liu_cv.pdf
+/assets/pdf/Yifei Liu.pdf
+/assets/pdf/Yifei Liu(deprecated).pdf
+/assets/pdf/resume_chinese.pdf
+/assets/pdf/diploma_transcripts.pdf
+/_pages/cv.md
+/_data/cv.yml
+

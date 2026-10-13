@@ -199,6 +199,13 @@ exclude:
   - resume_ai_internship_zh.md
   - resume_ai_internship_zh.tex
   - resume_ai_internship_zh.pdf
+  # Private CV documents must not be included in future site builds.
+  - assets/pdf/yifei_liu_cv.pdf
+  - assets/pdf/Yifei Liu.pdf
+  - assets/pdf/Yifei Liu(deprecated).pdf
+  - assets/pdf/resume_chinese.pdf
+  - assets/pdf/diploma_transcripts.pdf
+  - _pages/cv.md
 keep_files:
   - CNAME
   - .nojekyll
