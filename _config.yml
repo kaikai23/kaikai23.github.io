@@ -160,6 +160,9 @@ external_sources: []
 # -----------------------------------------------------------------------------
 
 collections:
+  notes:
+    output: true
+    permalink: /notes/:path/
   news:
     defaults:
       layout: post

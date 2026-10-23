@@ -1,0 +1,86 @@
+.research-note { --note-blue: #27607b; --note-orange: #a65721; }
+.note-header { padding: 3.2rem 0 2.8rem; border-bottom: 1px solid var(--line); }
+.note-eyebrow { font: 500 .7rem/1.5 "Source Sans 3", sans-serif; letter-spacing: .15em; color: var(--muted); margin-bottom: 1.5rem; }
+.note-eyebrow a { text-decoration: none; }
+.note-eyebrow span { margin-left: .8rem; color: #888; }
+.note-header h1 { font: 600 2.45rem/1.4 "Songti SC", "Noto Serif CJK SC", Georgia, serif; letter-spacing: -.025em; }
+.note-subtitle { font: 400 1.15rem/1.65 "PingFang SC", "Microsoft YaHei", sans-serif; margin: .8rem 0 1.4rem; }
+.note-meta { font: .78rem/1.8 "Source Sans 3", "PingFang SC", sans-serif; color: var(--muted); }
+.note-grid { display: grid; grid-template-columns: 10rem minmax(0, 1fr); gap: 2.2rem; padding-top: 2.4rem; align-items: start; }
+.note-toc { position: sticky; top: 1.5rem; font: .72rem/1.65 "Source Sans 3", "PingFang SC", sans-serif; }
+.note-toc summary { font-weight: 600; color: var(--text); cursor: pointer; }
+.note-toc ol { list-style: none; padding: 0; margin: .7rem 0 1.5rem; }
+.note-toc li { margin: .6rem 0; }
+.note-toc a { text-decoration: none; }
+.back-top { font-size: .7rem; }
+.note-prose { min-width: 0; font: .94rem/1.95 "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", system-ui, sans-serif; overflow-wrap: break-word; }
+.note-prose > p { margin-bottom: 1.4em; }
+.note-prose h2 { font-family: inherit; font-size: 1.38rem; line-height: 1.5; margin: 3.1rem 0 1.3rem; padding-top: 1.4rem; border-top: 1px solid var(--line); scroll-margin-top: 1.2rem; }
+.note-prose h2:first-of-type { margin-top: 2rem; }
+.note-prose h3 { font-family: inherit; font-size: 1.06rem; line-height: 1.6; margin: 2rem 0 .9rem; }
+.note-prose a { color: #345a6d; text-decoration-color: #b2c4cc; }
+.note-prose strong { font-weight: 600; }
+.note-prose table { width: 100%; border-collapse: collapse; margin: 1.7rem 0; font-size: .78rem; line-height: 1.7; }
+.note-prose th { color: var(--text); font-weight: 600; text-align: left; background: #f7f7f5; }
+.note-prose td, .note-prose th { padding: .7rem .55rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+.note-prose mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; padding: .5rem 0; max-width: 100%; font-size: 100% !important; }
+.note-prose ol { padding-left: 1.4rem; }
+.note-prose li { margin-bottom: .6rem; }
+.training-figure, .gradient-figure { margin: 2rem 0; padding: 1.3rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.note-prose figcaption { font-size: .74rem; line-height: 1.75; color: var(--muted); }
+.training-lane { display: grid; grid-template-columns: 5.3rem minmax(0,1fr); gap: .7rem; margin-bottom: 1.25rem; align-items: start; }
+.lane-label { font: 600 .76rem/2 "Source Sans 3", sans-serif; color: var(--text); }
+.flow { display: flex; align-items: center; flex-wrap: wrap; gap: .3rem .55rem; font-size: .73rem; }
+.flow > span:not(.flow-arrow) { border-bottom: 1px solid #b9b9b9; padding: .2rem 0; }
+.flow-gradient { margin-top: .5rem; color: var(--note-blue); }
+.gradient-label { color: var(--note-blue); font-size: .7rem; margin: .35rem 0 0; }
+.gradient-controls { margin: 1.1rem 0; }
+.gradient-controls label { display: block; font-size: .8rem; font-variant-numeric: tabular-nums; }
+.gradient-controls input { width: 100%; accent-color: var(--note-blue); margin: .7rem 0; }
+.gradient-buttons { display: flex; flex-wrap: wrap; gap: .6rem; }
+.gradient-buttons button { font-size: .74rem; line-height: 1.5; font-family: inherit; color: var(--body); background: #fff; border: 1px solid #aaa; border-radius: 3px; padding: .45rem .65rem; cursor: pointer; }
+.gradient-buttons button:hover { background: #f5f5f3; }
+.gradient-buttons button:focus-visible, .gradient-controls input:focus-visible { outline: 2px solid var(--note-blue); outline-offset: 3px; }
+.demo-hint { color: var(--muted); font-size: .7rem; margin: .7rem 0 0; }
+.gradient-charts { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; }
+.gradient-charts[hidden], .gradient-controls[hidden] { display: none; }
+.gradient-charts svg { width: 100%; display: block; overflow: visible; }
+.gradient-charts text { font-family: "Source Sans 3", "PingFang SC", sans-serif; font-size: 11px; fill: var(--body); }
+.gradient-result { font-size: .77rem; line-height: 1.9; margin-top: .7rem; font-variant-numeric: tabular-nums; }
+.gradient-result .true-value { color: var(--note-blue); }
+.gradient-result .model-value { color: var(--note-orange); }
+.step-result { font-size: .77rem; font-weight: 600; margin: .7rem 0 0; }
+.notes-index-header { padding: 3rem 0 2rem; }
+.notes-index-header h1 { margin-bottom: 1rem; }
+.notes-index-header > p:last-child { font: .95rem/1.8 "PingFang SC", sans-serif; color: var(--muted); }
+.note-entry { padding: 1.8rem 0 2.2rem; border-top: 1px solid var(--line); font: .92rem/1.9 "PingFang SC", sans-serif; max-width: 44rem; }
+.note-entry h2 { font: 600 1.35rem/1.6 "Songti SC", Georgia, serif; margin: .4rem 0 .8rem; }
+.note-entry h2 a { color: var(--text); text-decoration: none; }
+@media (max-width: 850px) {
+  .note-grid { display: flex; flex-direction: column; gap: 1.5rem; }
+  .note-toc { position: static; width: 100%; font-size: .78rem; border-bottom: 1px solid var(--line); padding-bottom: 1rem; }
+  .note-toc ol { columns: 2; margin-bottom: .5rem; }
+  .note-toc li { break-inside: avoid; }
+  .back-top { display: none; }
+  .note-prose { width: 100%; }
+}
+@media (max-width: 540px) {
+  .note-header { padding: 2rem 0 1.8rem; }
+  .note-header h1 { font-size: 1.8rem; }
+  .note-subtitle { font-size: .97rem; }
+  .note-prose { font-size: .9rem; }
+  .note-prose h2 { font-size: 1.22rem; }
+  .note-prose table { font-size: .7rem; }
+  .note-prose td, .note-prose th { padding: .6rem .3rem; }
+  .gradient-charts { grid-template-columns: 1fr; }
+  .training-lane { grid-template-columns: 1fr; gap: .3rem; }
+  .gradient-buttons button { min-height: 44px; }
+}
+@media print {
+  .note-toc, .gradient-controls { display: none; }
+  .note-grid { display: block; }
+  .note-header { padding-top: 0; }
+  .note-prose { font-size: 10pt; }
+  .note-prose h2, .note-prose h3 { break-after: avoid; }
+  .gradient-figure, .training-figure { break-inside: avoid; }
+}

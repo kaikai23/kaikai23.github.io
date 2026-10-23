@@ -1,0 +1,16 @@
+<figure class="gradient-figure" id="gradient-demo" aria-labelledby="gradient-caption">
+  <figcaption id="gradient-caption"><strong>交互例子：预测值很近，斜率可以相反</strong><br>实线：真实函数 f(a) = a；虚线：模型 f̂(a) = a + 0.01 sin(200a)。</figcaption>
+  <div class="gradient-controls" hidden>
+    <label for="action-slider">动作 a = <output id="action-value" for="action-slider">0.015708</output></label>
+    <input id="action-slider" type="range" min="0.005" max="0.095" step="0.0001" value="0.015708">
+    <div class="gradient-buttons"><button type="button" id="reset-gradient">回到反例点 π/200</button><button type="button" id="step-gradient">沿模型梯度走一步</button></div>
+    <p class="demo-hint">拖动动作观察斜率；单步使用学习率 0.01，目标输出为 0.1。</p>
+  </div>
+  <div class="gradient-charts" hidden>
+    <svg id="prediction-chart" role="img" aria-label="预测值：真实函数与学习模型随动作的变化"></svg>
+    <svg id="derivative-chart" role="img" aria-label="动作导数：真实斜率恒为一，模型斜率随动作变化"></svg>
+  </div>
+  <div id="gradient-result" class="gradient-result" aria-live="polite">在 a = π/200 处，预测误差为 0，真实斜率为 +1，模型斜率为 −1。真实损失需要增大动作，模型建议减小动作。</div>
+  <p id="step-result" class="step-result" aria-live="polite"></p>
+  <noscript><p>启用 JavaScript 可拖动动作查看图表；上方公式与本图的反例结论仍可直接阅读。</p></noscript>
+</figure>

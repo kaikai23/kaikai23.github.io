@@ -1,0 +1,24 @@
+---
+layout: academic
+title: Research Notes
+permalink: /notes/
+description: Research notes by Yifei Liu on world models, learning, and spatial intelligence.
+notes_page: true
+---
+<header class="notes-index-header">
+  <p class="note-eyebrow">IDEAS, DERIVATIONS & QUESTIONS</p>
+  <h1>Research Notes</h1>
+  <p lang="zh-CN">读论文，也追问方法背后的原理。</p>
+</header>
+<div class="notes-index">
+{% assign notes = site.notes | sort: 'date' | reverse %}
+{% for note in notes %}
+  <article class="note-entry" lang="{{ note.lang }}">
+    <p class="note-meta"><time datetime="{{ note.date | date: '%Y-%m-%d' }}">{{ note.date | date: '%Y-%m-%d' }}</time> · 中文 · {{ note.reading_time }} 分钟</p>
+    <h2><a href="{{ note.url | relative_url }}">{{ note.title }}</a></h2>
+    <p>{{ note.subtitle }}</p>
+    <p>{{ note.description }}</p>
+    <a href="{{ note.url | relative_url }}">阅读全文 →</a>
+  </article>
+{% endfor %}
+</div>
