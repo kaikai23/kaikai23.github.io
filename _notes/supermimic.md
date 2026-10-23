@@ -10,15 +10,15 @@ notes_page: true
 reading_time: 20
 version_note: SuperMimic v1
 toc:
-  - [world-model, 世界模型预测什么]
-  - [policy, 策略相同，训练不同]
-  - [efficiency, 效率从哪里来]
-  - [gradient, 预测值与动作梯度]
-  - [physics, 为什么不直接可微仿真]
-  - [value, 与价值函数的关系]
-  - [sim-to-real, 从仿真到真实机器人]
-  - [assessment, 创新与质疑]
-  - [references, 参考资料]
+  - ["world-model", "1. SuperMimic 的世界模型是什么？"]
+  - ["policy", "2. PPO 和 SuperMimic 最后得到的是同一种东西吗？"]
+  - ["efficiency", "3. 为什么多经过一道世界模型，反而可能更高效？"]
+  - ["gradient", "4. “状态预测准确”为什么不等于“动作梯度准确”？"]
+  - ["physics", "5. 那为什么不直接把 MuJoCo 做成可微的？"]
+  - ["value", "6. 这听起来很像 value function，它们到底差在哪？"]
+  - ["sim-to-real", "7. 只学仿真，为什么能在真实机器人上运行？"]
+  - ["assessment", "8. SuperMimic 新在哪里，哪些质疑值得保留？"]
+  - ["references", "参考资料"]
 ---
 
 这篇笔记从一个具体问题出发：既然已经有物理仿真，为什么还要训练一个世界模型，再通过它训练机器人？沿着这个问题，可以把 PPO、动力学模型、可微物理和价值函数放进同一张图里。

@@ -67,13 +67,3 @@ layout: academic
   </article>
   {% endfor %}
 </section>
-
-{% if site.notes.size > 0 %}
-<section class="research-notes" aria-labelledby="notes-title" style="margin-top: 2.5rem">
-  <div class="section-heading"><h2 id="notes-title">Research Notes</h2><a class="minor-link" href="{{ '/notes/' | relative_url }}">All notes</a></div>
-  {% assign recent_notes = site.notes | sort: 'date' | reverse %}
-  {% for note in recent_notes limit:3 %}
-  <p><a href="{{ note.url | relative_url }}" lang="{{ note.lang }}">{{ note.title }}</a><br><small>{{ note.date | date: '%Y-%m-%d' }} · {{ note.subtitle }}</small></p>
-  {% endfor %}
-</section>
-{% endif %}
