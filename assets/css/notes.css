@@ -50,9 +50,7 @@
 .gradient-result .true-value { color: var(--note-blue); }
 .gradient-result .model-value { color: var(--note-orange); }
 .step-result { font-size: .77rem; font-weight: 600; margin: .7rem 0 0; }
-.notes-index-header { padding: 3rem 0 2rem; }
-.notes-index-header h1 { margin-bottom: 1rem; }
-.notes-index-header > p:last-child { font: .95rem/1.8 "PingFang SC", sans-serif; color: var(--muted); }
+.notes-index { padding-top: 2rem; }
 .note-entry { padding: 1.8rem 0 2.2rem; border-top: 1px solid var(--line); font: .92rem/1.9 "PingFang SC", sans-serif; max-width: 44rem; }
 .note-entry h2 { font: 600 1.35rem/1.6 "Songti SC", Georgia, serif; margin: .4rem 0 .8rem; }
 .note-entry h2 a { color: var(--text); text-decoration: none; }
