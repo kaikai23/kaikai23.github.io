@@ -3,7 +3,7 @@ layout: note
 title: 从 SuperMimic 理解世界模型
 subtitle: 策略梯度、可微仿真与真实机器人
 description: 从 SuperMimic 出发，理解学习动力学、PPO、动作梯度、可微物理与价值函数，以及仿真策略如何部署到真实机器人。
-date: 2026-10-24
+date: 2026-10-24 00:00:00 +0800
 lang: zh-CN
 math: true
 notes_page: true
