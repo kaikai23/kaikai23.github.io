@@ -27,7 +27,7 @@
   <header class="site-header">
     <nav aria-label="Main navigation">
       <a href="{{ '/' | relative_url }}"{% if page.title == 'Home' %} aria-current="page"{% endif %}>Home</a>
-      <a href="{{ '/notes/' | relative_url }}"{% if page.notes_page or page.collection == 'notes' %} aria-current="page"{% endif %}>Notes</a>
+      <a href="{{ '/blog/' | relative_url }}"{% if page.notes_page or page.collection == 'notes' %} aria-current="page"{% endif %}>Blog</a>
       <a href="{{ '/archive.html' | relative_url }}"{% if page.title == 'Archive' %} aria-current="page"{% endif %}>Archive</a>
     </nav>
   </header>

@@ -163,7 +163,7 @@ external_sources: []
 collections:
   notes:
     output: true
-    permalink: /notes/:path/
+    permalink: /blog/:path/
   news:
     defaults:
       layout: post
