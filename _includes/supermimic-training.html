@@ -1,5 +1,0 @@
-<figure class="training-figure" aria-labelledby="training-caption">
-  <div class="training-lane"><span class="lane-label">PPO</span><div class="flow"><span>策略动作</span><span class="flow-arrow" aria-hidden="true">→</span><span>物理仿真</span><span class="flow-arrow" aria-hidden="true">→</span><span>轨迹与回报</span><span class="flow-arrow" aria-hidden="true">→</span><span>更新动作概率</span></div></div>
-  <div class="training-lane"><span class="lane-label">SuperMimic</span><div><div class="flow"><span>物理仿真数据</span><span class="flow-arrow" aria-hidden="true">→</span><span>拟合世界模型</span></div><div class="flow flow-gradient"><span>策略动作</span><span class="flow-arrow" aria-hidden="true">→</span><span>模型展开</span><span class="flow-arrow" aria-hidden="true">→</span><span>回报 + critic</span></div><p class="gradient-label">← 梯度穿过模型，回传到策略</p></div></div>
-  <figcaption id="training-caption">训练信息流示意。SuperMimic 持续交替采样、拟合模型和更新策略。</figcaption>
-</figure>
